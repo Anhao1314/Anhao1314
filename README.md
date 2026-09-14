@@ -1,59 +1,68 @@
 # Hi, I'm Anhao
 
-**Algorithm Engineer focused on reinforcement learning, robotics, quantitative research, and AI-native decision systems.**
+### Algorithm Engineer · Reinforcement Learning · Robotics · AI Decision Systems
 
-AI undergraduate focused on algorithm engineering. I enjoy building systems that connect:
+Building reproducible AI systems from experiments to engineering deployment.
 
-**research → experiments → engineering → reproducible evaluation**
+<sub>AI Undergraduate · 2027 Graduate — research → experiments → engineering → reproducible evaluation.</sub>
 
-## Current Focus
-
-- Reinforcement Learning & Embodied AI
-- Robot Navigation & Hierarchical Decision Making
-- Quantitative Research Infrastructure
-- AI-native Risk Intelligence
+---
 
 ## Featured Projects
 
 ### 1. [Unitree Go2W Hierarchical RL Navigation](https://github.com/Anhao1314/go2w-MoRA-navigation)
 
-MoRA-inspired simulation research combining high-level PPO with scripted control and rule-based decisions, supported by BC, DAgger and curriculum experiments.
+Hierarchical reinforcement learning for quadruped robot navigation in MuJoCo — high-level PPO over a scripted controller, with BC, DAgger and curriculum experiments.
 
-- Curve navigation: **20/20 success**, 0 falls.
-- 10 m-class multi-stage navigation: **20/20 success**, A-stop 100%, mean time 15.2 s.
-- Junction routing: **40/40 success**, correct branch 100%, 0 falls.
-- Quality: **197 tests discovered, 196 passed, 1 skipped; Pyright 0 errors** in the documented local run.
+`PPO` `Behavior Cloning` `DAgger` `Curriculum Learning` `MuJoCo`
 
-Recorded task-specific simulation results for the full system; branch choice and parts of docking are scripted. Final PPO weights require retraining. [Reports and limitations](https://github.com/Anhao1314/go2w-MoRA-navigation#demo--key-results).
+- Curve **20/20**, multi-stage A→B **20/20**, junction routing **40/40**, **0 falls** across these archived runs.
+- Includes ablation studies, failure→diagnosis analysis and a reproducible evaluation protocol.
+- **196 passed / 1 skipped**, Pyright 0 errors (documented local run).
+- Simulation-only (MuJoCo); branch selection and part of docking are scripted, final PPO weights require retraining.
 
-**Stack:** Python · PyTorch · MuJoCo · Gymnasium · Stable-Baselines3 · NumPy
+### 2. [RL Training Risk Replay](https://github.com/Anhao1314/rl-training-risk-replay)
 
-### 2. [FlowCredit](https://github.com/Anhao1314/flowcredit)
+Experiment-infrastructure project: chronologically replay RL training runs, flag training risk and validate experiment-data quality before trusting a result.
 
-Evidence-aware risk intelligence infrastructure for AI-native businesses and agents: **Evidence → Risk → Action**.
+`Chronological Replay` `Risk Analysis` `Data Quality` `Experiment Infra`
 
-- **67/67 tests passed** in the documented local verification run.
-- **5 TAI components and 5 CCI dimensions**, computed by versioned deterministic rules.
-- **6 modeled evidence source domains and 3 confirmed-event veto codes**; live external connectors remain future work.
+- Configurable **R0–R3** risk decisions (continue / watch / stop / tune / resize).
+- **6 data-quality categories / 20+ checks**; cached-vs-direct pipeline equivalence tests.
+- **265 tests passed** (documented local run); test gate runs on Linux CI.
+- Analyzes robot-training logs — **not** market trading. Look-ahead isolation is unfinished and type-check debt is tracked openly in Limitations.
 
-LLMs assist extraction or explanation; deterministic rules own authoritative risk outputs. External Alpha; no calibrated lending or Finch publication claim. [Verification and methodology](https://github.com/Anhao1314/flowcredit#key-results).
+### 3. [FlowCredit](https://github.com/Anhao1314/flowcredit)
 
-**Stack:** JavaScript · Node.js · JSON Schema / Ajv · Docker
+Risk-intelligence infrastructure for AI-native businesses and agents: **Evidence → Risk → Action**, with a deterministic risk engine behind a versioned API.
 
-### 3. [RL Training Risk Replay & Quantitative Analysis](https://github.com/Anhao1314/go2_lianghua)
+`Deterministic Risk Engine` `TAI / CCI` `Versioned API` `Docker` `AI Agents`
 
-Quantitative algorithm engineering for robot-training experiments: chronological replay, configurable risk decisions and time-series data validation.
+- Versioned deterministic **TAI (5 components)** and **CCI (5 dimensions)** plus confirmed-event integrity veto.
+- Bearer-auth, bounded, idempotent versioned API; containerized with Docker.
+- **67/67 tests passed** (documented local run); External Alpha.
+- LLMs assist evidence extraction and explanation only — **deterministic rules own every authoritative score**.
 
-- **265 tests passed** in the documented local verification run.
-- **4 risk levels (R0–R3)** and **6 data-quality categories / 20+ checks**.
-- **3 built-in replay predictors**, with deterministic fixture validation and cached/direct pipeline equivalence tests.
+---
 
-Partial temporal filtering; final metadata isolation remains incomplete. Full Pyright has unresolved findings. This analyzes training runs, not market trading or investment returns. [Validation and limitations](https://github.com/Anhao1314/go2_lianghua/blob/main/docs/portfolio-validation.md).
+## What I Can Deliver
 
-**Stack:** Python · pandas · NumPy · SciPy · scikit-learn · TensorBoard
+- **Run the full experiment loop** — define baselines, ablations and controls, then read failure modes instead of only reporting the winning run (Go2W: BC-vs-init, DAgger and goal-conditioning ablations with explicit interpretation boundaries).
+- **Build reproducible evaluation pipelines** — fixed protocols, archived reports and per-project validation records that state environment, scope and what was *not* proven.
+- **Debug data and training-quality problems** — reward-drawdown / stagnation / restart risk items and six-category data-quality screening (RL Training Risk Replay).
+- **Lock behavior with tests** — 196 passed / 1 skipped (Go2W), 265 passed (Risk Replay), 67/67 (FlowCredit), with honest accounting of skipped and advisory checks.
+- **Take a prototype to a testable system** — versioned, schema-validated API, deterministic core, Docker packaging and documentation (FlowCredit), while keeping the LLM/rule boundary explicit.
 
-## Core Skills
+## Core Stack
 
-Python · PyTorch · MuJoCo · Gymnasium · Stable-Baselines3 · NumPy · Pandas · Docker · Git · Linux
+`Python` `PyTorch` `MuJoCo` `Gymnasium` `Stable-Baselines3` `NumPy` `Pandas` `SciPy` `scikit-learn` `Linux` `Git` `Docker`
 
-Additional project stack: JavaScript · Node.js · JSON Schema
+<sub>Also used in FlowCredit: JavaScript · Node.js · JSON Schema / Ajv.</sub>
+
+---
+
+## About
+
+- Main thread across projects: **Algorithm Engineering · Reinforcement Learning · Robotics · Decision Systems · Experiment Infrastructure · Reproducible Engineering**.
+- Seeking 2027 internship / new-grad roles in algorithm engineering, reinforcement learning, robotics or embodied-AI decision systems.
+- I keep claim boundaries visible: simulation vs. real robot, post-hoc vs. predictive, deterministic vs. LLM — no result is presented as stronger than its evidence.
