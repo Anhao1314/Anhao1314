@@ -45,6 +45,25 @@ Risk-intelligence infrastructure for AI-native businesses and agents: **Evidence
 
 ---
 
+## Agent & Product Tooling
+
+### [Apple Product Design Skill](https://github.com/Anhao1314/Apple-skill)
+
+An open-source Agent Skill for structured product definition, feature tradeoffs and technical decision review, inspired by public Apple product practices.
+
+`Agent Skills` `Product Decision Systems` `Technical Review` `AI Tooling`
+
+- Turns product ideas, PRDs and technical proposals into explicit **keep / merge / demote / remove / verify** decisions, with concrete alternatives instead of general "make it simpler" advice.
+- Encodes a reusable workflow: **one-line product definition → simplification → end-to-end experience gaps → prototype validation**.
+- Four documented modes — product review, product definition, methodology Q&A, technical proposal review — running on one model-agnostic layout: `SKILL.md`, five `references/`, a review checklist and output templates.
+- Separates public product history from methodology inference, and labels assumptions and unverified claims instead of asserting them.
+
+**Install** — `npx skills add Anhao1314/Apple-skill`
+
+<sub>Independent project — not affiliated with or endorsed by Apple Inc. Validated through structure, reference and packaging checks; no client installation or Agent behavior test has been run yet.</sub>
+
+---
+
 ## What I Can Deliver
 
 - **Run the full experiment loop** — define baselines, ablations and controls, then read failure modes instead of only reporting the winning run (Go2W: BC-vs-init, DAgger and goal-conditioning ablations with explicit interpretation boundaries).
@@ -52,6 +71,7 @@ Risk-intelligence infrastructure for AI-native businesses and agents: **Evidence
 - **Debug data and training-quality problems** — reward-drawdown / stagnation / restart risk items and six-category data-quality screening (RL Training Risk Replay).
 - **Lock behavior with tests** — 196 passed / 1 skipped (Go2W), 265 passed (Risk Replay), 67/67 (FlowCredit), with honest accounting of skipped and advisory checks.
 - **Take a prototype to a testable system** — versioned, schema-validated API, deterministic core, Docker packaging and documentation (FlowCredit), while keeping the LLM/rule boundary explicit.
+- **Package a decision method as a reusable Agent Skill** — encode product and technical review into a repeatable workflow with explicit keep / merge / demote / remove decisions, evidence labels and reusable output templates (Apple Product Design Skill).
 
 ## Core Stack
 
@@ -63,6 +83,6 @@ Risk-intelligence infrastructure for AI-native businesses and agents: **Evidence
 
 ## About
 
-- Main thread across projects: **Algorithm Engineering · Reinforcement Learning · Robotics · Decision Systems · Experiment Infrastructure · Reproducible Engineering**.
+- Main thread across projects: **Algorithm Engineering · Reinforcement Learning · Robotics · Decision Systems · Experiment Infrastructure · Reproducible Engineering · Agent Tooling**.
 - Seeking 2027 internship / new-grad roles in algorithm engineering, reinforcement learning, robotics or embodied-AI decision systems.
 - I keep claim boundaries visible: simulation vs. real robot, post-hoc vs. predictive, deterministic vs. LLM — no result is presented as stronger than its evidence.
