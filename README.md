@@ -86,3 +86,9 @@ An open-source Agent Skill for structured product definition, feature tradeoffs 
 - Main thread across projects: **Algorithm Engineering · Reinforcement Learning · Robotics · Decision Systems · Experiment Infrastructure · Reproducible Engineering · Agent Tooling**.
 - Seeking 2027 internship / new-grad roles in algorithm engineering, reinforcement learning, robotics or embodied-AI decision systems.
 - I keep claim boundaries visible: simulation vs. real robot, post-hoc vs. predictive, deterministic vs. LLM — no result is presented as stronger than its evidence.
+
+---
+
+## Creator page
+
+我的爱发电主页：[半页网页实验室](https://afdian.com/a/banyeweblab)。分享 AI 辅助制作并检查过的网页界面、前端源码和使用说明，具体功能与限制以作品说明为准。
