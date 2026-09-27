@@ -92,3 +92,23 @@ An open-source Agent Skill for structured product definition, feature tradeoffs 
 ## Creator page
 
 我的爱发电主页：[半页网页实验室](https://afdian.com/a/banyeweblab)。分享 AI 辅助制作并检查过的网页界面、前端源码和使用说明，具体功能与限制以作品说明为准。
+
+
+## 网页单页制作 · 作品与咨询
+
+提供个人介绍页、产品展示页、活动落地页和现有页面样式调整。
+
+以下是自主制作的「半页·雨夜书店」界面样例，采用 AI 辅助制作并检查页面效果；不是客户案例。聊天回复是预设演示，未接入 AI 模型。
+
+![半页·雨夜书店电脑端界面](assets/banye-desktop.png)
+
+<details>
+<summary>查看手机端效果</summary>
+
+![半页·雨夜书店手机端界面](assets/banye-mobile.png)
+
+</details>
+
+基础服务：1 个简单静态页面（最多 3 个内容区块），电脑与手机适配、1 轮范围内修改，交付 HTML/CSS/JS 源码和使用说明。不含后端、账号登录、支付接入、域名服务器和上线运维。
+
+**[在闲鱼查看服务并咨询需求](https://www.goofish.com/item?id=1088455472656&categoryId=50023914)** · 请先沟通范围与交付时间，确认后再下单；价格及交易规则以商品页面为准。
