@@ -1,157 +1,187 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-hero-dark.svg">
-  <img src="assets/profile-hero-light.svg" alt="Eason — Building reliable AI systems that survive the first demo." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-hero-v3-dark.svg">
+  <img src="assets/profile-hero-v3-light.svg" alt="Eason — Building AI systems that remember what happened and can prove it." width="100%">
 </picture>
 
 <br>
 
 <div align="center">
 
-**Evidence-first engineering for long-running agents, learning systems, and research infrastructure.**
+**Evidence-first engineering for agents, learning systems, and research infrastructure.**
 
-<sub>STATE · EVIDENCE · VERIFICATION · RECOVERY</sub>
+<sub>STATE / EVIDENCE / VERIFICATION / RECOVERY</sub>
 
 </div>
 
 ---
 
-## 01 / Focus
+## Focus
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-**AGENT SYSTEMS**
+<sub>AGENT SYSTEMS</sub>
 
-Memory · Runtime · Recovery  
-Verification · Human authority
+**Memory / Runtime / Recovery**
 
-</td>
-<td width="33%" valign="top">
-
-**RL / ROBOTICS**
-
-PPO · MuJoCo · Replay  
-Hierarchical control
+Long-running systems with explicit state, bounded execution, verification, and human authority.
 
 </td>
 <td width="33%" valign="top">
 
-**RESEARCH INFRA**
+<sub>RL / ROBOTICS</sub>
 
-Grounding · Evidence  
-Versioned knowledge
+**Policy / Replay / Control**
+
+PPO, MuJoCo, hierarchical navigation, experiment reliability, and failure analysis.
+
+</td>
+<td width="33%" valign="top">
+
+<sub>RESEARCH INFRA</sub>
+
+**Grounding / Evidence / Change**
+
+Versioned knowledge, inspectable evidence, belief revision, and reproducible decisions.
 
 </td>
 </tr>
 </table>
 
-## 02 / Now
+## Now
 
-| System | Status | Current question |
-| --- | :---: | --- |
-| **[RL Sentinel](https://github.com/Anhao1314/RL-Sentinel)** | `ACTIVE` | Can an RL decision be replayed using only what was knowable at the time? |
-| **[chat-distiller](https://github.com/Anhao1314/chat-distiller)** | `ACTIVE` | How should long-running agents preserve decisions and recover useful context? |
-| **[Deep Native](https://github.com/Anhao1314/deep-native)** | `EXPERIMENT` | Can coding agents be required to verify before they declare success? |
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/runtime-now-dark.svg">
+  <img src="assets/runtime-now-light.svg" alt="Current runtime status: RL Sentinel active, chat-distiller active, Deep Native experiment." width="100%">
+</picture>
 
-## 03 / Selected systems
+## Selected systems
 
 <table>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 <sub>01 / RELIABILITY</sub>
 
-### [RL Sentinel](https://github.com/Anhao1314/RL-Sentinel)
+### [RL Sentinel ↗](https://github.com/Anhao1314/RL-Sentinel)
 
 Replay what the system knew, not what we know later.
 
-<code>Python</code> <code>RL</code> <code>Replay</code>
+<sub>PYTHON / RL / REPLAY</sub>
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 <sub>02 / EMBODIED RL</sub>
 
-### [Go2W MoRA Navigation](https://github.com/Anhao1314/Go2w-MoRA-navigation)
+### [Go2W MoRA ↗](https://github.com/Anhao1314/Go2w-MoRA-navigation)
 
 Hierarchical navigation for Unitree Go2W in MuJoCo.
 
-<code>PyTorch</code> <code>MuJoCo</code> <code>PPO</code>
+<sub>PYTORCH / MUJOCO / PPO</sub>
 
 </td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 <sub>03 / MEMORY</sub>
 
-### [chat-distiller](https://github.com/Anhao1314/chat-distiller)
+### [chat-distiller ↗](https://github.com/Anhao1314/chat-distiller)
 
 Versioned memory and knowledge for long-running agents.
 
-<code>Python</code> <code>Agent Memory</code> <code>Recovery</code>
-
-</td>
-<td width="50%" valign="top">
-
-<sub>04 / VERIFICATION</sub>
-
-### [Deep Native](https://github.com/Anhao1314/deep-native)
-
-Evidence-first execution for coding agents.
-
-<code>Claude Code</code> <code>DeepSeek</code> <code>Verification</code>
+<sub>PYTHON / MEMORY / RECOVERY</sub>
 
 </td>
 </tr>
 <tr>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
+
+<sub>04 / VERIFICATION</sub>
+
+### [Deep Native ↗](https://github.com/Anhao1314/deep-native)
+
+Evidence-first execution for coding agents.
+
+<sub>CLAUDE CODE / DEEPSEEK / VERIFY</sub>
+
+</td>
+<td width="33%" valign="top">
 
 <sub>05 / RESEARCH MEMORY</sub>
 
-### [FlowCredit Research](https://github.com/Anhao1314/flowcredit-research)
+### [FlowCredit Research ↗](https://github.com/Anhao1314/flowcredit-research)
 
 Grounded evidence and versioned belief change.
 
-<code>Evidence</code> <code>Claims</code> <code>Grounding</code>
+<sub>EVIDENCE / CLAIMS / GROUNDING</sub>
 
 </td>
-<td width="50%" valign="top">
+<td width="33%" valign="top">
 
 <sub>06 / DECISION INFRA</sub>
 
-### [FlowCredit](https://github.com/Anhao1314/flowcredit)
+### [FlowCredit ↗](https://github.com/Anhao1314/flowcredit)
 
 Evidence-aware risk infrastructure for AI-native systems.
 
-<code>Node.js</code> <code>Risk</code> <code>Agents</code>
+<sub>NODE.JS / RISK / AGENTS</sub>
 
 </td>
 </tr>
 </table>
 
-## 04 / System map
+## The thread
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/system-map-dark.svg">
-  <img src="assets/system-map-light.svg" alt="Observe, remember, decide, verify and recover — the recurring system loop across the selected projects." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/system-loop-dark.svg">
+  <img src="assets/system-loop-light.svg" alt="Observe, remember, decide, verify and recover form a continuous trust-across-time loop." width="100%">
 </picture>
 
-> **How do we make AI systems trustworthy across time, not only impressive in a single run?**
+<div align="center">
 
-## 05 / Principles
+### How do we make AI systems trustworthy across time, not only impressive in a single run?
 
-**Evidence over claims.** Successful-looking output is not proof.
+</div>
 
-**Replay before trust.** Important decisions should be reconstructable from the information available at the time.
+## Principles
 
-**Human authority above automation.** Agents can propose, execute, and review; consequential acceptance stays explicit.
+<table>
+<tr>
+<td width="33%" valign="top">
+
+<sub>01 / EVIDENCE</sub>
+
+**Evidence over claims.**
+
+Successful-looking output is not proof that the system worked.
+
+</td>
+<td width="33%" valign="top">
+
+<sub>02 / REPLAY</sub>
+
+**Replay before trust.**
+
+Important decisions should be reconstructable from what was available at the time.
+
+</td>
+<td width="33%" valign="top">
+
+<sub>03 / AUTHORITY</sub>
+
+**Human authority above automation.**
+
+Agents may propose, execute, and review. Consequential acceptance stays explicit.
+
+</td>
+</tr>
+</table>
 
 ---
 
 <div align="center">
 
-<sub>BUILD SYSTEMS · RUN EXPERIMENTS · KEEP THE RECEIPTS</sub>
+<sub>A13 / BUILD SYSTEMS · RUN EXPERIMENTS · KEEP THE RECEIPTS</sub>
 
 </div>
