@@ -1,15 +1,15 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-hero-v3-dark.svg">
-  <img src="assets/profile-hero-v3-light.svg" alt="Eason — Building AI systems that remember what happened and can prove it." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-hero-v4-dark.svg">
+  <img src="assets/profile-hero-v4-light.svg" alt="A13 / Eason — Build systems. Break assumptions. Keep the evidence." width="100%">
 </picture>
 
 <br>
 
 <div align="center">
 
-**Evidence-first engineering for agents, learning systems, and research infrastructure.**
+**Reliable AI systems for long-running agents, learning loops, and research work.**
 
-<sub>STATE / EVIDENCE / VERIFICATION / RECOVERY</sub>
+<sub>I like systems that can explain themselves after something goes wrong.</sub>
 
 </div>
 
@@ -23,16 +23,16 @@
 
 <sub>AGENT SYSTEMS</sub>
 
-**Memory / Runtime / Recovery**
+### Memory / Runtime / Recovery
 
-Long-running systems with explicit state, bounded execution, verification, and human authority.
+Long-running agents with explicit state, bounded execution, verification, and human authority.
 
 </td>
 <td width="33%" valign="top">
 
 <sub>RL / ROBOTICS</sub>
 
-**Policy / Replay / Control**
+### Policy / Replay / Control
 
 PPO, MuJoCo, hierarchical navigation, experiment reliability, and failure analysis.
 
@@ -41,7 +41,7 @@ PPO, MuJoCo, hierarchical navigation, experiment reliability, and failure analys
 
 <sub>RESEARCH INFRA</sub>
 
-**Grounding / Evidence / Change**
+### Grounding / Evidence / Change
 
 Versioned knowledge, inspectable evidence, belief revision, and reproducible decisions.
 
@@ -52,26 +52,28 @@ Versioned knowledge, inspectable evidence, belief revision, and reproducible dec
 ## Now
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/runtime-now-dark.svg">
-  <img src="assets/runtime-now-light.svg" alt="Current runtime status: RL Sentinel active, chat-distiller active, Deep Native experiment." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/runtime-now-v4-dark.svg">
+  <img src="assets/runtime-now-v4-light.svg" alt="Current live workstreams: RL Sentinel and chat-distiller active, Deep Native v0.2 in experiment." width="100%">
 </picture>
 
 ## Selected systems
 
 <table>
 <tr>
-<td width="33%" valign="top">
+<td width="62%" valign="top">
 
-<sub>01 / RELIABILITY</sub>
+<sub>01 / FLAGSHIP / RELIABILITY</sub>
 
-### [RL Sentinel ↗](https://github.com/Anhao1314/RL-Sentinel)
+## [RL Sentinel ↗](https://github.com/Anhao1314/RL-Sentinel)
 
-Replay what the system knew, not what we know later.
+**Replay what the system knew, not what we know later.**
 
-<sub>PYTHON / RL / REPLAY</sub>
+A reliability layer for reinforcement-learning experiments: chronological replay, time-gated inputs, evidence bundles, failure analysis, and explicit limits.
+
+<sub>PYTHON / RL / REPLAY / EXPERIMENT RELIABILITY</sub>
 
 </td>
-<td width="33%" valign="top">
+<td width="38%" valign="top">
 
 <sub>02 / EMBODIED RL</sub>
 
@@ -82,42 +84,46 @@ Hierarchical navigation for Unitree Go2W in MuJoCo.
 <sub>PYTORCH / MUJOCO / PPO</sub>
 
 </td>
-<td width="33%" valign="top">
+</tr>
+<tr>
+<td width="38%" valign="top">
 
 <sub>03 / MEMORY</sub>
 
 ### [chat-distiller ↗](https://github.com/Anhao1314/chat-distiller)
 
-Versioned memory and knowledge for long-running agents.
+Versioned memory, stale detection, and recovery context for long-running agents.
 
 <sub>PYTHON / MEMORY / RECOVERY</sub>
 
 </td>
-</tr>
-<tr>
-<td width="33%" valign="top">
+<td width="62%" valign="top">
 
-<sub>04 / VERIFICATION</sub>
+<sub>04 / FLAGSHIP / VERIFICATION</sub>
 
-### [Deep Native ↗](https://github.com/Anhao1314/deep-native)
+## [Deep Native ↗](https://github.com/Anhao1314/deep-native)
 
-Evidence-first execution for coding agents.
+**Make coding agents prove they're done.**
 
-<sub>CLAUDE CODE / DEEPSEEK / VERIFY</sub>
+Evidence-first execution for coding agents, now exploring adaptive FAST / STANDARD / DEEP escalation without hiding verification failure.
+
+<sub>CLAUDE CODE / DEEPSEEK / VERIFICATION / ADAPTIVE RUNTIME</sub>
 
 </td>
-<td width="33%" valign="top">
+</tr>
+<tr>
+<td width="56%" valign="top">
 
 <sub>05 / RESEARCH MEMORY</sub>
 
 ### [FlowCredit Research ↗](https://github.com/Anhao1314/flowcredit-research)
 
-Grounded evidence and versioned belief change.
+Grounded evidence, versioned claims, explicit relations, and human-reviewed belief change.
 
 <sub>EVIDENCE / CLAIMS / GROUNDING</sub>
 
 </td>
-<td width="33%" valign="top">
+<td width="44%" valign="top">
 
 <sub>06 / DECISION INFRA</sub>
 
@@ -131,6 +137,20 @@ Evidence-aware risk infrastructure for AI-native systems.
 </tr>
 </table>
 
+## Recent signals
+
+**2026.10.06 · [FlowCredit Research](https://github.com/Anhao1314/flowcredit-research)**  
+<code>SAFETY / AUDIT</code> — hardened v0.2C S1 safety-audit integrity without changing runtime, benchmark labels, or thresholds.
+
+**2026.10.06 · [Deep Native](https://github.com/Anhao1314/deep-native)**  
+<code>EXPERIMENT / V0.2</code> — added an adaptive runtime candidate with FAST / STANDARD / DEEP escalation and held-out ablation planning.
+
+**2026.10.06 · [chat-distiller](https://github.com/Anhao1314/chat-distiller)**  
+<code>MEMORY / V0.4</code> — added Context Gateway 0.4 for a lower-friction connect → sync → context → status path.
+
+**2026.10.06 · [RL Sentinel](https://github.com/Anhao1314/RL-Sentinel)**  
+<code>RELIABILITY / DOCS</code> — refined the project identity and reading experience while preserving runtime APIs and historical evidence.
+
 ## The thread
 
 <picture>
@@ -140,7 +160,7 @@ Evidence-aware risk infrastructure for AI-native systems.
 
 <div align="center">
 
-### How do we make AI systems trustworthy across time, not only impressive in a single run?
+### Trust is not a model output. It is a system property you have to keep earning.
 
 </div>
 
@@ -154,7 +174,7 @@ Evidence-aware risk infrastructure for AI-native systems.
 
 **Evidence over claims.**
 
-Successful-looking output is not proof that the system worked.
+A successful-looking output is not proof.
 
 </td>
 <td width="33%" valign="top">
@@ -163,7 +183,7 @@ Successful-looking output is not proof that the system worked.
 
 **Replay before trust.**
 
-Important decisions should be reconstructable from what was available at the time.
+Important decisions should survive reconstruction.
 
 </td>
 <td width="33%" valign="top">
@@ -172,7 +192,7 @@ Important decisions should be reconstructable from what was available at the tim
 
 **Human authority above automation.**
 
-Agents may propose, execute, and review. Consequential acceptance stays explicit.
+Agents can propose and execute. Acceptance stays explicit.
 
 </td>
 </tr>
@@ -182,6 +202,6 @@ Agents may propose, execute, and review. Consequential acceptance stays explicit
 
 <div align="center">
 
-<sub>A13 / BUILD SYSTEMS · RUN EXPERIMENTS · KEEP THE RECEIPTS</sub>
+<sub>A13 / BUILD · BREAK · VERIFY · REPEAT</sub>
 
 </div>
