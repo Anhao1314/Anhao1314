@@ -1,207 +1,129 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-hero-v4-dark.svg">
-  <img src="assets/profile-hero-v4-light.svg" alt="A13 / Eason — Build systems. Break assumptions. Keep the evidence." width="100%">
-</picture>
+<p align="center">
+<a href="https://github.com/Anhao1314">
+  <img src="https://readme-typing-svg.demolab.com?font=Georgia&size=19&duration=2200&pause=250&multiline=true&width=620&height=88&center=true&lines=Eason;AI+Systems+%2B+RL+Engineer+%E2%80%94+research+and+shipping;Agent+Systems+%7C+Reinforcement+Learning+%7C+Embodied+AI" alt="Typing SVG" />
+</a>
+<br/>
 
-<br>
+<a href="https://website-samitaakhters-1803.vercel.app">
+  <img src="https://img.shields.io/badge/Website-Portfolio-black?style=flat-square&logo=vercel&logoColor=white">
+</a>
+<a href="https://github.com/Anhao1314/RL-Sentinel">
+  <img src="https://img.shields.io/badge/RL-RL%20Sentinel-black?style=flat-square&logo=python&logoColor=white">
+</a>
+<a href="https://github.com/Anhao1314/Go2w-MoRA-navigation">
+  <img src="https://img.shields.io/badge/Robotics-Go2W%20MoRA-black?style=flat-square&logo=pytorch&logoColor=white">
+</a>
+<a href="https://github.com/Anhao1314/chat-distiller">
+  <img src="https://img.shields.io/badge/Agents-chat--distiller-black?style=flat-square">
+</a>
+<a href="https://github.com/Anhao1314/deep-native">
+  <img src="https://img.shields.io/badge/Coding-Deep%20Native-black?style=flat-square">
+</a>
+<a href="https://github.com/Anhao1314/flowcredit-research">
+  <img src="https://img.shields.io/badge/Research-FlowCredit-black?style=flat-square">
+</a>
+
+<br/><br/>
+
+<a href="https://github.com/Anhao1314">
+  <img src="https://github-stats-alpha.vercel.app/api?username=Anhao1314&cc=22272e&tc=37BCF6&ic=fff&bc=0000" alt="GitHub profile stats">
+</a>
+</p>
+
+* 🎓 AI undergraduate, graduating in **2027**. I work mostly at the boundary between **agent systems**, **reinforcement learning**, and **embodied intelligence**.
+
+* 🧠 Current focus: making AI systems more reliable across time — memory, replay, evidence, verification, recovery, and explicit human authority.
+
+* 🧪 Currently building [RL Sentinel](https://github.com/Anhao1314/RL-Sentinel), [chat-distiller](https://github.com/Anhao1314/chat-distiller), and [Deep Native](https://github.com/Anhao1314/deep-native). Recent work includes RL reliability, Context Gateway 0.4, and adaptive coding-agent runtime experiments.
+
+* 🤖 Robotics work: [Go2W MoRA Navigation](https://github.com/Anhao1314/Go2w-MoRA-navigation), a MuJoCo hierarchical navigation project using PPO, behavior cloning, DAgger, curriculum learning, ablations, and reproducible evaluation.
+
+* 💡 Working rule: **evidence over claims**. A result is more useful when it can be replayed, inspected, and honestly bounded.
 
 <div align="center">
 
-**Reliable AI systems for long-running agents, learning loops, and research work.**
+### 🖥️ Projects & Research
 
-<sub>I like systems that can explain themselves after something goes wrong.</sub>
+<table style="table-layout:fixed;width:100%">
+<tr><th colspan="3">Agent Systems & Research Infrastructure</th></tr>
+<tr><th width="40%">Project</th><th width="12%">Stars</th><th width="48%">Tech / Focus</th></tr>
 
-</div>
-
----
-
-## Focus
-
-<table>
 <tr>
-<td width="33%" valign="top">
-
-<sub>AGENT SYSTEMS</sub>
-
-### Memory / Runtime / Recovery
-
-Long-running agents with explicit state, bounded execution, verification, and human authority.
-
+<td><a href="https://github.com/Anhao1314/chat-distiller"><b>chat-distiller</b></a><br/><sub>Versioned memory and knowledge for long-running agents.</sub></td>
+<td><img alt="Stars" src="https://img.shields.io/github/stars/Anhao1314/chat-distiller?style=flat-square&labelColor=black"/></td>
+<td>
+<img src="https://img.shields.io/badge/Python-black?style=flat-square&logo=python">
+<img src="https://img.shields.io/badge/Agent%20Memory-black?style=flat-square">
+<img src="https://img.shields.io/badge/Recovery-black?style=flat-square">
 </td>
-<td width="33%" valign="top">
+</tr>
 
-<sub>RL / ROBOTICS</sub>
-
-### Policy / Replay / Control
-
-PPO, MuJoCo, hierarchical navigation, experiment reliability, and failure analysis.
-
+<tr>
+<td><a href="https://github.com/Anhao1314/deep-native"><b>Deep Native</b></a><br/><sub>Evidence-first execution and adaptive runtime for coding agents.</sub></td>
+<td><img alt="Stars" src="https://img.shields.io/github/stars/Anhao1314/deep-native?style=flat-square&labelColor=black"/></td>
+<td>
+<img src="https://img.shields.io/badge/Claude%20Code-black?style=flat-square">
+<img src="https://img.shields.io/badge/DeepSeek-black?style=flat-square">
+<img src="https://img.shields.io/badge/Verification-black?style=flat-square">
 </td>
-<td width="33%" valign="top">
+</tr>
 
-<sub>RESEARCH INFRA</sub>
+<tr>
+<td><a href="https://github.com/Anhao1314/flowcredit-research"><b>FlowCredit Research</b></a><br/><sub>Auditable research memory with grounded evidence and versioned belief change.</sub></td>
+<td><img alt="Stars" src="https://img.shields.io/github/stars/Anhao1314/flowcredit-research?style=flat-square&labelColor=black"/></td>
+<td>
+<img src="https://img.shields.io/badge/JavaScript-black?style=flat-square&logo=javascript">
+<img src="https://img.shields.io/badge/Evidence-black?style=flat-square">
+<img src="https://img.shields.io/badge/Grounding-black?style=flat-square">
+</td>
+</tr>
 
-### Grounding / Evidence / Change
-
-Versioned knowledge, inspectable evidence, belief revision, and reproducible decisions.
-
+<tr>
+<td><a href="https://github.com/Anhao1314/flowcredit"><b>FlowCredit</b></a><br/><sub>Evidence-aware risk infrastructure for AI-native systems.</sub></td>
+<td><img alt="Stars" src="https://img.shields.io/github/stars/Anhao1314/flowcredit?style=flat-square&labelColor=black"/></td>
+<td>
+<img src="https://img.shields.io/badge/Node.js-black?style=flat-square&logo=nodedotjs">
+<img src="https://img.shields.io/badge/Risk%20Engine-black?style=flat-square">
+<img src="https://img.shields.io/badge/AI%20Agents-black?style=flat-square">
 </td>
 </tr>
 </table>
 
-## Now
+<table style="table-layout:fixed;width:100%">
+<tr><th colspan="3">Reinforcement Learning & Robotics</th></tr>
+<tr><th width="40%">Project</th><th width="12%">Stars</th><th width="48%">Technologies</th></tr>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/runtime-now-v4-dark.svg">
-  <img src="assets/runtime-now-v4-light.svg" alt="Current live workstreams: RL Sentinel and chat-distiller active, Deep Native v0.2 in experiment." width="100%">
-</picture>
-
-## Selected systems
-
-<table>
 <tr>
-<td width="62%" valign="top">
-
-<sub>01 / FLAGSHIP / RELIABILITY</sub>
-
-## [RL Sentinel ↗](https://github.com/Anhao1314/RL-Sentinel)
-
-**Replay what the system knew, not what we know later.**
-
-A reliability layer for reinforcement-learning experiments: chronological replay, time-gated inputs, evidence bundles, failure analysis, and explicit limits.
-
-<sub>PYTHON / RL / REPLAY / EXPERIMENT RELIABILITY</sub>
-
-</td>
-<td width="38%" valign="top">
-
-<sub>02 / EMBODIED RL</sub>
-
-### [Go2W MoRA ↗](https://github.com/Anhao1314/Go2w-MoRA-navigation)
-
-Hierarchical navigation for Unitree Go2W in MuJoCo.
-
-<sub>PYTORCH / MUJOCO / PPO</sub>
-
+<td><a href="https://github.com/Anhao1314/RL-Sentinel"><b>RL Sentinel</b></a><br/><sub>Chronological replay and reliability analysis for RL experiments.</sub></td>
+<td><img alt="Stars" src="https://img.shields.io/github/stars/Anhao1314/RL-Sentinel?style=flat-square&labelColor=black"/></td>
+<td>
+<img src="https://img.shields.io/badge/Python-black?style=flat-square&logo=python">
+<img src="https://img.shields.io/badge/Reinforcement%20Learning-black?style=flat-square">
+<img src="https://img.shields.io/badge/Replay-black?style=flat-square">
 </td>
 </tr>
+
 <tr>
-<td width="38%" valign="top">
-
-<sub>03 / MEMORY</sub>
-
-### [chat-distiller ↗](https://github.com/Anhao1314/chat-distiller)
-
-Versioned memory, stale detection, and recovery context for long-running agents.
-
-<sub>PYTHON / MEMORY / RECOVERY</sub>
-
-</td>
-<td width="62%" valign="top">
-
-<sub>04 / FLAGSHIP / VERIFICATION</sub>
-
-## [Deep Native ↗](https://github.com/Anhao1314/deep-native)
-
-**Make coding agents prove they're done.**
-
-Evidence-first execution for coding agents, now exploring adaptive FAST / STANDARD / DEEP escalation without hiding verification failure.
-
-<sub>CLAUDE CODE / DEEPSEEK / VERIFICATION / ADAPTIVE RUNTIME</sub>
-
-</td>
-</tr>
-<tr>
-<td width="56%" valign="top">
-
-<sub>05 / RESEARCH MEMORY</sub>
-
-### [FlowCredit Research ↗](https://github.com/Anhao1314/flowcredit-research)
-
-Grounded evidence, versioned claims, explicit relations, and human-reviewed belief change.
-
-<sub>EVIDENCE / CLAIMS / GROUNDING</sub>
-
-</td>
-<td width="44%" valign="top">
-
-<sub>06 / DECISION INFRA</sub>
-
-### [FlowCredit ↗](https://github.com/Anhao1314/flowcredit)
-
-Evidence-aware risk infrastructure for AI-native systems.
-
-<sub>NODE.JS / RISK / AGENTS</sub>
-
+<td><a href="https://github.com/Anhao1314/Go2w-MoRA-navigation"><b>Go2W MoRA Navigation</b></a><br/><sub>Hierarchical navigation for Unitree Go2W in MuJoCo.</sub></td>
+<td><img alt="Stars" src="https://img.shields.io/github/stars/Anhao1314/Go2w-MoRA-navigation?style=flat-square&labelColor=black"/></td>
+<td>
+<img src="https://img.shields.io/badge/PyTorch-black?style=flat-square&logo=pytorch">
+<img src="https://img.shields.io/badge/MuJoCo-black?style=flat-square">
+<img src="https://img.shields.io/badge/PPO-black?style=flat-square">
+<img src="https://img.shields.io/badge/Robotics-black?style=flat-square">
 </td>
 </tr>
 </table>
 
-## Recent signals
-
-**2026.10.06 · [FlowCredit Research](https://github.com/Anhao1314/flowcredit-research)**  
-<code>SAFETY / AUDIT</code> — hardened v0.2C S1 safety-audit integrity without changing runtime, benchmark labels, or thresholds.
-
-**2026.10.06 · [Deep Native](https://github.com/Anhao1314/deep-native)**  
-<code>EXPERIMENT / V0.2</code> — added an adaptive runtime candidate with FAST / STANDARD / DEEP escalation and held-out ablation planning.
-
-**2026.10.06 · [chat-distiller](https://github.com/Anhao1314/chat-distiller)**  
-<code>MEMORY / V0.4</code> — added Context Gateway 0.4 for a lower-friction connect → sync → context → status path.
-
-**2026.10.06 · [RL Sentinel](https://github.com/Anhao1314/RL-Sentinel)**  
-<code>RELIABILITY / DOCS</code> — refined the project identity and reading experience while preserving runtime APIs and historical evidence.
-
-## The thread
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/system-loop-dark.svg">
-  <img src="assets/system-loop-light.svg" alt="Observe, remember, decide, verify and recover form a continuous trust-across-time loop." width="100%">
-</picture>
-
-<div align="center">
-
-### Trust is not a model output. It is a system property you have to keep earning.
-
 </div>
 
-## Principles
+<details>
+<summary>📈 Stats</summary>
+<br/>
 
-<table>
-<tr>
-<td width="33%" valign="top">
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Anhao1314&theme=dracula)
 
-<sub>01 / EVIDENCE</sub>
+![](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Anhao1314&theme=dracula)
+![](https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Anhao1314&theme=dracula)
 
-**Evidence over claims.**
-
-A successful-looking output is not proof.
-
-</td>
-<td width="33%" valign="top">
-
-<sub>02 / REPLAY</sub>
-
-**Replay before trust.**
-
-Important decisions should survive reconstruction.
-
-</td>
-<td width="33%" valign="top">
-
-<sub>03 / AUTHORITY</sub>
-
-**Human authority above automation.**
-
-Agents can propose and execute. Acceptance stays explicit.
-
-</td>
-</tr>
-</table>
-
----
-
-<div align="center">
-
-<sub>A13 / BUILD · BREAK · VERIFY · REPEAT</sub>
-
-</div>
+</details>
