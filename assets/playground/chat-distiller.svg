@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 260" width="570" height="260" role="img" aria-labelledby="title desc">
-<title id="title">chat-distiller: Keep the context. Pick up where you left off.</title><desc id="desc">Project cover. 01 / AGENT MEMORY. The illustration is decorative, not a measured result. Click the surrounding link to open the repository.</desc>
+<title id="title">CarryTrace: Your work continues. Keep the evidence attached.</title><desc id="desc">Project cover. 01 / AGENT CONTINUITY. The illustration is decorative, not a measured result. Click the surrounding link to open the repository.</desc>
 
 <rect x="1" y="1" width="568" height="258" rx="18" fill="#EDE6FF" stroke="#25233D" stroke-width="2"/>
-<text x="27" y="34" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#25233D" letter-spacing=".7">01 / AGENT MEMORY</text>
-<text x="26" y="87" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#25233D" letter-spacing="-1">chat-distiller</text>
-<text x="28" y="126" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25233D" >Keep the context.</text>
-<text x="28" y="154" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25233D" >Pick up where you left off.</text>
+<text x="27" y="34" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#25233D" letter-spacing=".7">01 / AGENT CONTINUITY</text>
+<text x="26" y="87" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#25233D" letter-spacing="-1">CarryTrace</text>
+<text x="28" y="126" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25233D" >Your work continues.</text>
+<text x="28" y="154" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25233D" >Keep the evidence attached.</text>
 <g transform="translate(465 84)"><g stroke="#25233D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="51" height="42" rx="9" fill="#FFF9EF"/><path d="M17 18H44M17 28H37M24 46L16 56V45" fill="none"/><rect x="30" y="38" width="36" height="30" rx="7" fill="#C9B7FF"/><path d="M39 49H57M39 58H50"/></g></g>
 <path d="M27 191H543" stroke="#25233D" stroke-width="1" opacity=".25"/>
-<text x="28" y="226" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#25233D" >PYTHON / CONTEXT / RECOVERY</text>
+<text x="28" y="226" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#25233D" >SKILL / CONTEXT / RECOVERY</text>
 <circle cx="525" cy="220" r="15" fill="#25233D"/>
 <path d="M519 226L531 214M520 214H531V225" fill="none" stroke="#EDE6FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 
