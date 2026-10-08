@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 260" width="570" height="260" role="img" aria-labelledby="title desc">
+<title id="title">FlowCredit: From scattered evidence to inspectable risk signals.</title><desc id="desc">Project cover. 06 / API EXPERIMENTS. The illustration is decorative, not a measured result. Click the surrounding link to open the repository.</desc>
+
+<rect x="1" y="1" width="568" height="258" rx="18" fill="#ECE8E0" stroke="#25233D" stroke-width="2"/>
+<text x="27" y="34" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#25233D" letter-spacing=".7">06 / API EXPERIMENTS</text>
+<text x="26" y="87" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#25233D" letter-spacing="-1">FlowCredit</text>
+<text x="28" y="126" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25233D" >From scattered evidence</text>
+<text x="28" y="154" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25233D" >to inspectable risk signals.</text>
+<g transform="translate(465 84)"><g stroke="#25233D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M36 3L61 13V34Q60 52 36 65Q12 52 11 34V13Z" fill="#FFF9EF"/><path d="M30 23L21 33L30 43M43 23L52 33L43 43" fill="none"/><circle cx="62" cy="57" r="12" fill="#C9B7FF"/><path d="M57 57L61 61L68 53" fill="none"/></g></g>
+<path d="M27 191H543" stroke="#25233D" stroke-width="1" opacity=".25"/>
+<text x="28" y="226" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#25233D" >NODE.JS / RISK / API</text>
+<circle cx="525" cy="220" r="15" fill="#25233D"/>
+<path d="M519 226L531 214M520 214H531V225" fill="none" stroke="#ECE8E0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>

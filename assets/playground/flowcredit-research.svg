@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 570 260" width="570" height="260" role="img" aria-labelledby="title desc">
+<title id="title">FlowCredit Research: Follow the idea. Keep the evidence attached.</title><desc id="desc">Project cover. 03 / RESEARCH TOOLS. The illustration is decorative, not a measured result. Click the surrounding link to open the repository.</desc>
+
+<rect x="1" y="1" width="568" height="258" rx="18" fill="#FFE2D5" stroke="#25233D" stroke-width="2"/>
+<text x="27" y="34" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#25233D" letter-spacing=".7">03 / RESEARCH TOOLS</text>
+<text x="26" y="87" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#25233D" letter-spacing="-1">FlowCredit Research</text>
+<text x="28" y="126" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25233D" >Follow the idea.</text>
+<text x="28" y="154" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="400" fill="#25233D" >Keep the evidence attached.</text>
+<g transform="translate(465 84)"><g stroke="#25233D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="11" y="2" width="44" height="57" rx="6" fill="#FFF9EF" transform="rotate(-8 33 30)"/><path d="M21 16H41M21 26H43M21 36H36" fill="none"/><circle cx="49" cy="46" r="17" fill="#FFAB95"/><path d="M61 58L70 69M41 46L47 52L58 40" fill="none"/></g></g>
+<path d="M27 191H543" stroke="#25233D" stroke-width="1" opacity=".25"/>
+<text x="28" y="226" font-family="'Courier New', monospace" font-size="12" font-weight="700" fill="#25233D" >MEMORY / EVIDENCE / REASONING</text>
+<circle cx="525" cy="220" r="15" fill="#25233D"/>
+<path d="M519 226L531 214M520 214H531V225" fill="none" stroke="#FFE2D5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+</svg>
