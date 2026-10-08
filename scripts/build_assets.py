@@ -101,7 +101,7 @@ def icon(kind):
 
 
 PROJECTS = [
- ('chat-distiller','01 / AGENT MEMORY','chat-distiller','Keep the context.','Pick up where you left off.','PYTHON / CONTEXT / RECOVERY','#EDE6FF','memory'),
+ ('chat-distiller','01 / AGENT CONTINUITY','CarryTrace','Your work continues.','Keep the evidence attached.','SKILL / CONTEXT / RECOVERY','#EDE6FF','memory'),
  ('deep-native','02 / CODING AGENTS','Deep Native','A lighter way to code with AI.','Inspect, experiment, verify.','SKILLS / DEEPSEEK / TOOLING','#ECF4CF','runtime'),
  ('flowcredit-research','03 / RESEARCH TOOLS','FlowCredit Research','Follow the idea.','Keep the evidence attached.','MEMORY / EVIDENCE / REASONING','#FFE2D5','evidence'),
  ('rl-sentinel','04 / REINFORCEMENT LEARNING','RL Sentinel','Rewind the run.','Understand the recommendation.','PYTHON / REPLAY / EXPERIMENTS','#DFEFFF','replay'),

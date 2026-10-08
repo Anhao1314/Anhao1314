@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parents[1]
 README = (ROOT / 'README.md').read_text(encoding='utf-8')
 ASSETS = ROOT / 'assets' / 'playground'
 EXPECTED = {
- 'chat-distiller': 'chat-distiller', 'deep-native': 'deep-native',
+ 'chat-distiller': 'CarryTrace', 'deep-native': 'deep-native',
  'flowcredit-research': 'flowcredit-research', 'rl-sentinel': 'RL-Sentinel',
  'go2w-mora': 'Go2w-MoRA-navigation', 'flowcredit': 'flowcredit',
 }
@@ -138,6 +138,11 @@ class ProfileChecks(unittest.TestCase):
     def test_no_external_stats_widgets(self):
         for host in ['shields.io','readme-typing-svg','github-stats-alpha','github-profile-summary-cards']:
             self.assertNotIn(host, README)
+
+    def test_carrytrace_brand_link_and_card(self):
+        self.assertEqual(README.count('https://github.com/Anhao1314/CarryTrace'), 3)
+        self.assertNotIn('https://github.com/Anhao1314/chat-distiller', README)
+        self.assertIn('CarryTrace', (ASSETS/'chat-distiller.svg').read_text(encoding='utf-8'))
 
 
 if __name__=='__main__':

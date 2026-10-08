@@ -21,7 +21,7 @@ My current rabbit holes: **AI agents, reinforcement learning, and robots**. Stil
 Six projects, a few rabbit holes. Pick a cover and take a look inside.
 
 <p align="center">
-  <a href="https://github.com/Anhao1314/chat-distiller"><img src="assets/playground/chat-distiller.svg" width="49%" alt="chat-distiller: persistent context and recovery for long-running agents. Open the repository."></a>
+  <a href="https://github.com/Anhao1314/CarryTrace"><img src="assets/playground/chat-distiller.svg" width="49%" alt="CarryTrace: source-linked context and continuity for long-running agents. Open the repository."></a>
   <a href="https://github.com/Anhao1314/deep-native"><img src="assets/playground/deep-native.svg" width="49%" alt="Deep Native: adaptive coding skills and verification tools for DeepSeek in Claude Code. Open the repository."></a>
 </p>
 <p align="center">
@@ -38,7 +38,7 @@ Six projects, a few rabbit holes. Pick a cover and take a look inside.
 
 | Project | What I'm exploring |
 | :--- | :--- |
-| [chat-distiller](https://github.com/Anhao1314/chat-distiller) | Keeping useful context across long-running agent work. |
+| [CarryTrace](https://github.com/Anhao1314/CarryTrace) | Keeping useful context across long-running agent work. |
 | [Deep Native](https://github.com/Anhao1314/deep-native) | Lighter coding-agent behavior, tested instead of assumed. |
 | [FlowCredit Research](https://github.com/Anhao1314/flowcredit-research) | Research memory that keeps the evidence attached. |
 | [RL Sentinel](https://github.com/Anhao1314/RL-Sentinel) | Replaying what was known when a recommendation was made. |
@@ -54,7 +54,7 @@ Six projects, a few rabbit holes. Pick a cover and take a look inside.
 [G1 mission experiments](https://github.com/Anhao1314/g1-jev-swarm-lab): structured tasks, measured outcomes, and failure handling in MuJoCo. Simulation research, not a claim of real-world robot safety.
 
 **🧠 An agent that doesn't lose the thread.**  
-[chat-distiller](https://github.com/Anhao1314/chat-distiller): bringing the right decisions and context back when work spans conversations.
+[CarryTrace](https://github.com/Anhao1314/CarryTrace): bringing the right decisions and context back when work spans conversations.
 
 **🛠️ Doing less, checking better.**  
 [Deep Native](https://github.com/Anhao1314/deep-native): experimenting with how much process a coding task actually needs. The first pilot did not show a quality improvement; that result stays visible.
