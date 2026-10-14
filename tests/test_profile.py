@@ -1,149 +1,72 @@
-"""Offline structural checks for the published profile, not scientific project tests."""
-import importlib.util
-from html.parser import HTMLParser
+"""Checks for the text-first GitHub profile, not for project capabilities."""
 from pathlib import Path
 import re
 import unittest
-import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-README = (ROOT / 'README.md').read_text(encoding='utf-8')
-ASSETS = ROOT / 'assets' / 'playground'
-EXPECTED = {
- 'chat-distiller': 'CarryTrace', 'deep-native': 'deep-native',
- 'flowcredit-research': 'flowcredit-research', 'rl-sentinel': 'RL-Sentinel',
- 'go2w-mora': 'Go2w-MoRA-navigation', 'flowcredit': 'flowcredit',
+README = (ROOT / "README.md").read_text(encoding="utf-8")
+REPO_PREFIX = "https://github.com/Anhao1314/"
+REPOSITORIES = {
+    "g1-jev-swarm-lab",
+    "Go2w-MoRA-navigation",
+    "RL-Sentinel",
+    "CarryTrace",
+    "flowcredit-research",
+    "flowcredit",
+    "deep-native",
+    "life-finds-a-way",
 }
 
 
-class Tags(HTMLParser):
-    def __init__(self, source):
-        super().__init__()
-        self.tags = []
-        self.feed(source)
-    def handle_starttag(self, tag, attrs):
-        self.tags.append((tag, dict(attrs)))
+class TextProfileTests(unittest.TestCase):
+    def test_identity_and_personal_thesis(self):
+        for phrase in ("# Eason", "人工智能本科生", "2027 届", "生命会自己寻求出路"):
+            with self.subTest(phrase=phrase):
+                self.assertIn(phrase, README)
 
+    def test_editorial_order(self):
+        sections = [
+            "## 🔭 我在关注什么",
+            "## 🧩 项目记录",
+            "## 🌱 我如何看待 AI Coding",
+            "## ✍️ 研究之外",
+        ]
+        positions = [README.index(section) for section in sections]
+        self.assertEqual(positions, sorted(positions))
+        self.assertEqual(len(re.findall(r"(?m)^## ", README)), len(sections))
 
-class ProfileChecks(unittest.TestCase):
-    def test_generated_assets_are_current(self):
-        spec = importlib.util.spec_from_file_location('artwork', ROOT/'scripts/build_assets.py')
-        module = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(module)
-        for name, expected in module.build().items():
-            with self.subTest(name=name):
-                self.assertEqual((ASSETS/name).read_text(encoding='utf-8'), expected)
+    def test_all_project_links_are_present(self):
+        destinations = set(re.findall(
+            r"https://github\.com/Anhao1314/([A-Za-z0-9_.-]+)", README
+        ))
+        self.assertEqual(destinations, REPOSITORIES)
+        for repo in REPOSITORIES:
+            with self.subTest(repo=repo):
+                self.assertIn(REPO_PREFIX + repo, README)
 
-    def test_ten_well_formed_svgs(self):
-        files = list(ASSETS.glob('*.svg'))
-        self.assertEqual(len(files), 10)
-        for file in files:
-            with self.subTest(name=file.name):
-                root = ET.parse(file).getroot()
-                self.assertEqual(root.tag, '{http://www.w3.org/2000/svg}svg')
-                self.assertIsNotNone(root.find('{http://www.w3.org/2000/svg}title'))
-                self.assertIsNotNone(root.find('{http://www.w3.org/2000/svg}desc'))
-                self.assertIn('viewBox', root.attrib)
+    def test_research_limits_remain_visible(self):
+        for phrase in ("仿真结果不等于", "尚未证明质量提升", "不代表已经校准的信用评级", "失败也是证据"):
+            with self.subTest(phrase=phrase):
+                self.assertIn(phrase, README)
 
-    def test_assets_have_no_active_or_external_content(self):
-        for path in ASSETS.glob('*.svg'):
-            source = path.read_text(encoding='utf-8')
-            self.assertNotRegex(source, r'<(?:script|foreignObject|iframe|image)\b')
-            self.assertNotRegex(source, r'\bon\w+\s*=')
-            self.assertNotIn('javascript:', source.lower())
-            self.assertNotIn('@import', source.lower())
-            self.assertNotIn('@font-face', source.lower())
-            self.assertNotRegex(source, r'url\(\s*[\'\"]?(?:https?:|data:)')
+    def test_no_playground_visual_debt(self):
+        for legacy in (
+            "<picture", "<img", "<svg", "<details", "assets/playground/",
+            "EASON / PLAYGROUND", "ALWAYS IN BETA", "Things I've built",
+            "Side quests",
+        ):
+            with self.subTest(legacy=legacy):
+                self.assertNotIn(legacy, README)
+        self.assertFalse((ROOT / "assets/playground").exists())
+        self.assertFalse((ROOT / "scripts/build_assets.py").exists())
+        self.assertFalse((ROOT / "docs/profile-design.md").exists())
+        self.assertFalse((ROOT / "docs/validation-2026-10-08.md").exists())
 
-    def test_readme_has_no_unsupported_active_styling(self):
-        self.assertNotRegex(README, r'<(?:script|style|iframe|svg)\b')
-        self.assertNotRegex(README, r'\b(?:style|onclick|onload)\s*=')
-
-    def test_illustrations_are_lightweight(self):
-        sizes = [p.stat().st_size for p in ASSETS.glob('*.svg')]
-        self.assertLess(max(sizes), 16000)
-        self.assertLess(sum(sizes), 70000)
-
-    def test_html_local_asset_references_exist(self):
-        for tag, attrs in Tags(README).tags:
-            for key in ('src', 'srcset'):
-                value = attrs.get(key)
-                if value:
-                    self.assertTrue(value.startswith('assets/playground/'))
-                    self.assertTrue((ROOT/value).is_file(), value)
-
-    def test_markdown_local_references_exist(self):
-        for dest in re.findall(r'\]\(([^)]+)\)', README):
-            if not dest.startswith(('https://', '#')):
-                self.assertTrue((ROOT/dest).is_file(), dest)
-
-    def test_all_images_have_meaningful_alt(self):
-        images = [attrs for tag,attrs in Tags(README).tags if tag == 'img']
-        self.assertEqual(len(images), 7)
-        for attrs in images:
-            self.assertGreater(len(attrs.get('alt','')), 30)
-
-    def test_project_destinations_match_covers(self):
-        pairs = re.findall(r'<a href="([^"]+)"><img src="assets/playground/([^"/]+)\.svg"',README)
-        self.assertEqual(len(pairs), 6)
-        self.assertEqual(len({slug for _,slug in pairs}), 6)
-        for href, slug in pairs:
-            self.assertEqual(href, 'https://github.com/Anhao1314/'+EXPECTED[slug])
-
-    def test_navigation_anchors_resolve(self):
-        ids = {a['id'] for _, a in Tags(README).tags if 'id' in a}
-        anchors = [a['href'][1:] for _, a in Tags(README).tags if a.get('href','').startswith('#')]
-        self.assertEqual(len(anchors), 3)
-        for anchor in anchors:
-            self.assertIn(anchor, ids)
-
-    def test_disclosures_and_text_fallback(self):
-        self.assertEqual(README.count('<details>'), 4)
-        self.assertEqual(README.count('</details>'), 4)
-        self.assertEqual(README.count('<summary>'), 4)
-        self.assertIn('text-only project index', README)
-
-    def test_static_covers_have_no_animation(self):
-        for theme in ('light','dark'):
-            source = (ASSETS/f'hero-{theme}-static.svg').read_text(encoding='utf-8')
-            self.assertNotIn('@keyframes', source)
-            self.assertNotIn('animation:', source)
-
-    def test_motion_ends_before_five_seconds(self):
-        for theme in ('light','dark'):
-            source = (ASSETS/f'hero-{theme}.svg').read_text(encoding='utf-8')
-            self.assertNotIn('infinite', source)
-            declarations = re.findall(r'animation:(\w+) ([\d.]+)s [\w-]+ (\d+);',source)
-            self.assertEqual(len(declarations), 3)
-            for _,duration,iterations in declarations:
-                self.assertLessEqual(float(duration)*int(iterations), 4.8)
-            self.assertIn('@media(prefers-reduced-motion:reduce)', source)
-            self.assertIn('animation:none!important', source)
-
-    def test_picture_has_theme_and_motion_fallbacks(self):
-        sources=[a for t,a in Tags(README).tags if t=='source']
-        self.assertEqual(len(sources), 3)
-        self.assertTrue(sources[0]['srcset'].endswith('hero-dark.svg'))
-        self.assertTrue(sources[1]['srcset'].endswith('hero-light.svg'))
-        self.assertTrue(sources[2]['srcset'].endswith('hero-dark-static.svg'))
-        fallback = next(a for t,a in Tags(README).tags if t == 'img')
-        self.assertTrue(fallback['src'].endswith('hero-light-static.svg'))
-        self.assertIn('prefers-reduced-motion: no-preference', sources[0]['media'])
-        self.assertIn('prefers-reduced-motion: no-preference', sources[1]['media'])
-
-    def test_student_and_research_boundaries_remain(self):
-        for phrase in ['AI undergraduate','2027','Simulation research','not a live activity feed','did not show a quality improvement','not calibrated lending decisions']:
-            self.assertIn(phrase, README)
-
-    def test_no_external_stats_widgets(self):
-        for host in ['shields.io','readme-typing-svg','github-stats-alpha','github-profile-summary-cards']:
+    def test_no_tracking_or_false_live_data(self):
+        for host in ("shields.io", "readme-typing-svg", "github-stats-alpha", "github-profile-summary-cards"):
             self.assertNotIn(host, README)
-
-    def test_carrytrace_brand_link_and_card(self):
-        self.assertEqual(README.count('https://github.com/Anhao1314/CarryTrace'), 3)
-        self.assertNotIn('https://github.com/Anhao1314/chat-distiller', README)
-        self.assertIn('CarryTrace', (ASSETS/'chat-distiller.svg').read_text(encoding='utf-8'))
+        self.assertLess(len(README), 8000)
 
 
-if __name__=='__main__':
+if __name__ == "__main__":
     unittest.main()

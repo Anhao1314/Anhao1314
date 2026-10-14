@@ -1,104 +1,82 @@
-<picture>
-  <source media="(prefers-color-scheme: dark) and (prefers-reduced-motion: no-preference)" srcset="assets/playground/hero-dark.svg">
-  <source media="(prefers-reduced-motion: no-preference)" srcset="assets/playground/hero-light.svg">
-  <source media="(prefers-color-scheme: dark)" srcset="assets/playground/hero-dark-static.svg">
-  <img src="assets/playground/hero-light-static.svg" alt="Hey, I'm Eason. AI student, class of 2027. A little code. A lot of curiosity. Agents, robots and ideas that escaped my notes." width="100%">
-</picture>
+# Eason
 
-<p align="center">
-  <a href="#things-ive-built">✳ Things I've built</a> &nbsp; · &nbsp;
-  <a href="#currently-messing-with">⚡ On my desk</a> &nbsp; · &nbsp;
-  <a href="#side-quests">🎮 Side quests</a>
-</p>
+**人工智能本科生 · 2027 届**  
+关注 AI Agent、具身智能与强化学习，也在探索如何让复杂系统的结论更可靠。
 
-I'm an **AI undergraduate, graduating in 2027**. I like turning “what happens if…” into something I can run, break, and improve.
+我喜欢把不确定的问题变成可以运行、检验和复盘的实验。比起堆积功能，我更关心：**解决了什么问题？证据能支持怎样的结论？还有什么尚未证明？**
 
-My current rabbit holes: **AI agents, reinforcement learning, and robots**. Still learning. Still changing my mind. Building along the way.
-
-<a id="things-ive-built"></a>
-## ✳ Things I've built
-
-Six projects, a few rabbit holes. Pick a cover and take a look inside.
-
-<p align="center">
-  <a href="https://github.com/Anhao1314/CarryTrace"><img src="assets/playground/chat-distiller.svg" width="49%" alt="CarryTrace: source-linked context and continuity for long-running agents. Open the repository."></a>
-  <a href="https://github.com/Anhao1314/deep-native"><img src="assets/playground/deep-native.svg" width="49%" alt="Deep Native: adaptive coding skills and verification tools for DeepSeek in Claude Code. Open the repository."></a>
-</p>
-<p align="center">
-  <a href="https://github.com/Anhao1314/flowcredit-research"><img src="assets/playground/flowcredit-research.svg" width="49%" alt="FlowCredit Research: auditable research memory and evidence reasoning. Open the repository."></a>
-  <a href="https://github.com/Anhao1314/RL-Sentinel"><img src="assets/playground/rl-sentinel.svg" width="49%" alt="RL Sentinel: chronological replay and recommendation review for reinforcement-learning experiments. Open the repository."></a>
-</p>
-<p align="center">
-  <a href="https://github.com/Anhao1314/Go2w-MoRA-navigation"><img src="assets/playground/go2w-mora.svg" width="49%" alt="Go2W MoRA: hierarchical robot navigation in MuJoCo. Open the repository."></a>
-  <a href="https://github.com/Anhao1314/flowcredit"><img src="assets/playground/flowcredit.svg" width="49%" alt="FlowCredit: an experimental evidence-aware risk API, not calibrated lending decisions. Open the repository."></a>
-</p>
-
-<details>
-<summary>📎 Prefer a text-only project index?</summary>
-
-| Project | What I'm exploring |
-| :--- | :--- |
-| [CarryTrace](https://github.com/Anhao1314/CarryTrace) | Keeping useful context across long-running agent work. |
-| [Deep Native](https://github.com/Anhao1314/deep-native) | Lighter coding-agent behavior, tested instead of assumed. |
-| [FlowCredit Research](https://github.com/Anhao1314/flowcredit-research) | Research memory that keeps the evidence attached. |
-| [RL Sentinel](https://github.com/Anhao1314/RL-Sentinel) | Replaying what was known when a recommendation was made. |
-| [Go2W MoRA](https://github.com/Anhao1314/Go2w-MoRA-navigation) | Hierarchical robot navigation in simulation. |
-| [FlowCredit](https://github.com/Anhao1314/flowcredit) | Inspectable evidence and deterministic risk signals through an API. |
-
-</details>
-
-<a id="currently-messing-with"></a>
-## ⚡ Currently messing with
-
-**🤖 Robots that can handle a plan going wrong.**  
-[G1 mission experiments](https://github.com/Anhao1314/g1-jev-swarm-lab): structured tasks, measured outcomes, and failure handling in MuJoCo. Simulation research, not a claim of real-world robot safety.
-
-**🧠 An agent that doesn't lose the thread.**  
-[CarryTrace](https://github.com/Anhao1314/CarryTrace): bringing the right decisions and context back when work spans conversations.
-
-**🛠️ Doing less, checking better.**  
-[Deep Native](https://github.com/Anhao1314/deep-native): experimenting with how much process a coding task actually needs. The first pilot did not show a quality improvement; that result stays visible.
-
-<sub>A hand-curated workbench, not a live activity feed. The linked repositories are the source of truth.</sub>
-
-<a id="side-quests"></a>
-## 🎮 Side quests
-
-<details>
-<summary>Open the other tabs in my brain ↗</summary>
-
-**Creative coding · AI visuals · Small tools · Interface experiments**
-
-Not every idea needs to become a startup. Some are worth building just to see what happens.
-
-我还是学生。想把好奇心变成能跑起来的东西，也想把它们做得好看一点。
-
-</details>
-
-<details>
-<summary>🧪 Playful outside. A little more serious under the hood.</summary>
-
-I want the experiments to be fun and the claims to be honest.
-
-**Keep the failed runs. Link the evidence. Say what isn't working yet.**
-
-The project repositories hold the protocols, limitations and results. This profile is a way in, not a substitute for them.
-
-</details>
-
-<details>
-<summary>🤖 About the little robot & this page</summary>
-
-The robot is an original geometric SVG illustration, not a photo or a product screenshot. It floats, blinks and settles in under five seconds. Motion is decorative; it does not indicate that an agent is online.
-
-This page uses repository-hosted artwork, ordinary links and native disclosure panels. No tracking widgets, external font requests, made-up metrics, or JavaScript pretending to work in a README.
-
-Motion-sensitive readers get a static cover when their browser exposes the reduced-motion preference. Static covers are also available directly: [light](assets/playground/hero-light-static.svg) · [dark](assets/playground/hero-dark-static.svg).
-
-[Design & maintenance notes](docs/profile-design.md)
-
-</details>
+> **生命会自己寻求出路。**
+>
+> 人负责定义值得解决的问题、资源与边界；AI 可以探索不同道路；真实证据决定哪些改变值得保留。  
+> [了解这一理念与它背后的失败经历 → Life Finds a Way](https://github.com/Anhao1314/life-finds-a-way)
 
 ---
 
-<p align="center"><b>Curiosity first. Keep building. ✳</b><br><sub>Eason / Anhao1314 · Learning in public.</sub></p>
+## 🔭 我在关注什么
+
+**具身智能与自主执行**  
+当机器人遇到计划外的状态时，怎样让任务执行、失败处理和验证形成闭环？
+
+**AI Agent 与长期任务**  
+智能体如何在跨会话、跨工具的工作中保留必要的上下文、判断依据与连续性？
+
+**证据驱动的工程实践**  
+怎样区分“系统跑通了”和“能力真的进步了”？什么情况下应继续尝试，什么情况下应该停下来？
+
+## 🧩 项目记录
+
+这里是我正在积累的研究与工程实践。每个项目的具体实现、实验记录和限制，以对应仓库为准。
+
+### 🤖 具身智能与强化学习
+
+**[G1 · 自适应任务执行研究](https://github.com/Anhao1314/g1-jev-swarm-lab)**  
+围绕任务组织、执行反馈与失败处理开展 MuJoCo 仿真实验。仿真结果不等于现实环境中的机器人可靠性。
+
+**[Go2W · MoRA 分层导航](https://github.com/Anhao1314/Go2w-MoRA-navigation)**  
+探索机器人分层导航、强化学习和模仿学习，并通过实验与消融分析方案的适用范围。
+
+**[RL-Sentinel · 训练风险回放](https://github.com/Anhao1314/RL-Sentinel)**  
+按时间顺序回放训练状态与风险判断，使失败、指标和当时的决策能够被重新检查。
+
+### 🧠 智能体与证据系统
+
+**[CarryTrace · 长任务上下文延续](https://github.com/Anhao1314/CarryTrace)**  
+研究如何在多阶段工作中保存关键上下文，并把恢复后的判断与原始来源关联起来。
+
+**[FlowCredit Research · 可审查的研究记忆](https://github.com/Anhao1314/flowcredit-research)**  
+围绕研究主张、证据出处与版本化判断构建可追溯的研究基础设施。
+
+**[FlowCredit · 风险信号实验](https://github.com/Anhao1314/flowcredit)**  
+尝试把可核验的公开证据与确定性计算组织为可检查的风险信号。它不代表已经校准的信用评级或信贷决策能力。
+
+### 🧪 AI 辅助编程研究
+
+**[Deep Native · 编程智能体工作方式实验](https://github.com/Anhao1314/deep-native)**  
+检验技能、工作流程和额外验证是否真正改善任务表现。早期小规模对照**尚未证明质量提升**，失败结果同样保留。
+
+**[Life Finds a Way · 研发理念与 Skill](https://github.com/Anhao1314/life-finds-a-way)**  
+记录我从反复指定实现步骤，到尝试让 AI 自主探索、由证据选择方案的思想转变。这仍是一套需要继续验证的工作假设。
+
+---
+
+## 🌱 我如何看待 AI Coding
+
+过去我会提前规定技术栈、架构和每一步执行方式。后来逐渐发现，AI 可以沿着既定路线写出很多代码，却不一定更接近真正的问题。
+
+我现在更愿意遵循三个原则：
+
+- **目标先于路线。** 先说明为什么要做、做到什么程度，而不是先指定答案。
+- **探索必须守界。** 自主选择方法，不等于自行获得新的权限、预算或发布授权。
+- **失败也是证据。** 保留无法复现、没有通过和证据不足的结果，不把工程活动当作能力增长。
+
+**“生命会自己寻求出路”不是放任 AI 一直运行，而是允许它改变道路，也允许它及时停止。**
+
+[阅读完整的研发宪章、故事与实验边界 →](https://github.com/Anhao1314/life-finds-a-way)
+
+## ✍️ 研究之外
+
+我也会做创意编程、AI 视觉和一些小工具。它们不一定会成为正式项目，但可以让我保持动手和试错的习惯。
+
+---
+
+<sub>Eason · Anhao1314 · 学习、构建、验证、修正。</sub>
