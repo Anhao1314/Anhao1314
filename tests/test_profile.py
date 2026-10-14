@@ -101,7 +101,7 @@ class ProfileChecks(unittest.TestCase):
         self.assertEqual(README.count('<details>'), 4)
         self.assertEqual(README.count('</details>'), 4)
         self.assertEqual(README.count('<summary>'), 4)
-        self.assertIn('text-only project index', README)
+        self.assertIn('文字版项目索引', README)
 
     def test_static_covers_have_no_animation(self):
         for theme in ('light','dark'):
@@ -132,7 +132,13 @@ class ProfileChecks(unittest.TestCase):
         self.assertIn('prefers-reduced-motion: no-preference', sources[1]['media'])
 
     def test_student_and_research_boundaries_remain(self):
-        for phrase in ['AI undergraduate','2027','Simulation research','not a live activity feed','did not show a quality improvement','not calibrated lending decisions']:
+        for phrase in ['人工智能本科生','2027','仿真研究','不是实时动态','尚未证明质量提升','未经校准的信贷决策']:
+            self.assertIn(phrase, README)
+
+    def test_personal_philosophy_and_research_link(self):
+        self.assertIn('生命会自己寻求出路', README)
+        self.assertIn('https://github.com/Anhao1314/life-finds-a-way', README)
+        for phrase in ['人负责目标', 'AI 负责探索', '证据负责筛选']:
             self.assertIn(phrase, README)
 
     def test_no_external_stats_widgets(self):
