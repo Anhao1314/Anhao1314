@@ -1,3 +1,5 @@
+![EASON](assets/banner.png)
+
 # Eason
 
 [中文](README.md) · [English](README.en.md) · [视觉主页](https://anhao1314.github.io)
@@ -6,15 +8,17 @@
 
 独立研究者，研究 AI 与复杂系统：智能如何研究、判断、行动，并对自己给出的结论负责。
 
-> 生命会自己寻求出路。 Life finds a way.
+> **生命会自己寻求出路。** Life finds a way.
 
 **研究假设：** 人负责定义值得解决的问题，AI 负责探索道路，真实证据决定保留什么。完整展开见 [life-finds-a-way](https://github.com/Anhao1314/life-finds-a-way)。
 
 **核心问题：** 怎样让复杂系统的结论可靠、可审计、不冒充现状。
 
-仿真跑通 ≠ 现实可靠；检索命中 ≠ 结论现行；AI 输出 ≠ 可信依据。
+> 仿真跑通 ≠ 现实可靠；检索命中 ≠ 结论现行；AI 输出 ≠ 可信依据。
 
-## 项目
+---
+
+## 项目 · REPOS
 
 这些仓库不共享架构，只共享一组问题：信息凭什么可信、Agent 能自主到什么程度、任务完成如何证明、仿真成功怎样变成现实能力、AI 参与决策后如何保留证据与局限。
 
@@ -41,7 +45,9 @@
 | [flowcredit](https://github.com/Anhao1314/flowcredit) | 风险智能 API：确定性规则承载结论，<br>模型提取需显式同意，PD 与预期损失仍为空 | 维护中 |
 | [flowcredit-research](https://github.com/Anhao1314/flowcredit-research) | 投研记忆与证据推理：观点可追溯、修订留痕，<br>模型无裁决权；盲测未通过 | 实验中 |
 
-## 主线：ClaimLedger
+---
+
+## 主线：ClaimLedger · LEDGER
 
 ![测试](https://github.com/Anhao1314/ClaimLedger/actions/workflows/tests.yml/badge.svg) [v0.10.0](https://github.com/Anhao1314/ClaimLedger/releases/latest)，421 个测试跑在 macOS/Linux CI 上，纯标准库零依赖。
 
@@ -61,24 +67,32 @@
 
 基准是合成的（40 个会话、24 个查询），只测检索：冲突类查询上 Recall@5 由 1.00 降至 0.50，过期目标的召回未测量；冲突检测只摊开疑似冲突，不做语义裁决。它管状态与来源，不判断真伪，不是 AI 记忆、Agent 可靠性或事实核验的通用解。
 
-## 研发宪章
+---
+
+## 研发宪章 · CHARTER
 
 - **目标先于路线。** 先说明为什么做、做到什么程度，再选方法；行业惯例不构成理由。
 - **探索必须守界。** 自主选择方法，不等于自行获得新的权限、预算或发布授权。
 - **失败也是证据。** 没复现的、没通过的、证据不足的结果保留归档，按原样标注。
 
-## 边界，不藏在口号里
+---
+
+## 边界，不藏在口号里 · LIMITS
 
 - 这些是个人研究系统，不是生产系统；
 - lastgreen 的 v0.1 试点是负结果（10 组配对中 0 胜 1 负 9 平），v0.2 的 12 次消融尚未运行：早期对照尚未证明质量提升；
 - flowcredit 的风险结论不代表已经校准的信用评级；
 - go2w 与 g1 的结果都在仿真中，尚无域随机化与实物验证：仿真结果不等于实物可靠。
 
-## 校验
+---
+
+## 校验 · VERIFY
 
 CI 用 [test_profile.py](tests/test_profile.py) 校验本页：链接集合与状态词汇覆盖两份文件，章节顺序、身份短语与上述局限声明在中文页上断言；禁用词汇表与字节上限定义在检查器里。检查器只验证结构与在场性，不验证真伪——绿灯不是证明。
 
-## 现在
+---
+
+## 现在 · NOW
 
 - 在做：ClaimLedger v2 争议闭合、双时态与依赖回溯已合入 main，尚未进发布版（v0.10.0 不含）；Phase B 与存储合并仅设计定稿。
 - 未做：go2w 的域随机化与 sim2real 验证；g1 的长时程任务仍是目标而非结果。

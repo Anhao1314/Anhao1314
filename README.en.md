@@ -1,3 +1,5 @@
+![EASON](assets/banner.png)
+
 # Eason
 
 [中文](README.md) · [English](README.en.md) · [Visual home](https://anhao1314.github.io)
@@ -6,15 +8,17 @@
 
 Independent researcher on AI and complex systems: how systems study, decide, act — and answer for their conclusions.
 
-> Life finds a way. 生命会自己寻求出路。
+> **Life finds a way.** 生命会自己寻求出路。
 
 **Working hypothesis:** People define the problems worth solving, AI explores the paths, real evidence decides what survives. Charter: [life-finds-a-way](https://github.com/Anhao1314/life-finds-a-way).
 
 **Core question:** How to make a complex system's conclusions reliable, auditable and unable to masquerade as present state.
 
-Simulation passing ≠ reality working; retrieval hit ≠ claim current; AI output ≠ trusted evidence.
+> Simulation passing ≠ reality working; retrieval hit ≠ claim current; AI output ≠ trusted evidence.
 
-## Projects
+---
+
+## Projects · REPOS
 
 No shared architecture — one set of questions: what deserves trust, how far an agent may go alone, how a system proves a task done, how simulation success becomes capability, and what evidence and limits survive once AI joins a decision.
 
@@ -41,7 +45,9 @@ No shared architecture — one set of questions: what deserves trust, how far an
 | [flowcredit](https://github.com/Anhao1314/flowcredit) | Risk intelligence API: deterministic rules carry conclusions,<br>extraction consent-gated, PD and expected loss null | maintenance |
 | [flowcredit-research](https://github.com/Anhao1314/flowcredit-research) | Investment-research memory: claims traceable, revisions recorded,<br>model holds no authority; blind test failed | experiment |
 
-## Main line: ClaimLedger
+---
+
+## Main line: ClaimLedger · LEDGER
 
 ![Tests](https://github.com/Anhao1314/ClaimLedger/actions/workflows/tests.yml/badge.svg) [v0.10.0](https://github.com/Anhao1314/ClaimLedger/releases/latest), 421 tests, macOS/Linux CI, stdlib only, zero dependencies.
 
@@ -61,24 +67,32 @@ Against raw transcripts, status filtering pushes stale hits (@5) from 54% to 0; 
 
 Synthetic benchmark (40 sessions, 24 queries), retrieval-only: on conflict queries Recall@5 drops from 1.00 to 0.50; expired-target recall unmeasured. Conflict matching surfaces suspicions, never adjudicates semantics. It governs status and provenance, not truth — no general solution to AI memory, agent reliability or fact-checking.
 
-## Engineering charter
+---
+
+## Engineering charter · CHARTER
 
 - **Goals before routes.** Say why and how far before choosing how; industry default is no reason.
 - **Exploration has boundaries.** Freedom to pick methods is not new permissions, budgets or release authority.
 - **Failure is evidence.** Results that don't reproduce, don't pass or lack evidence stay archived as they are.
 
-## Limits, not hidden behind slogans
+---
+
+## Limits, not hidden behind slogans · LIMITS
 
 - These are personal research systems, not production systems;
 - lastgreen's v0.1 pilot was negative (0 wins, 1 loss, 9 ties in 10 pairs); its 12-run v0.2 ablation has not run: early comparisons have not yet proven quality improvement;
 - flowcredit's risk conclusions are not a calibrated credit rating;
 - go2w and g1 results are all in simulation, no domain randomization or hardware validation: simulation results are not hardware reliability.
 
-## Verification
+---
+
+## Verification · VERIFY
 
 CI checks this page via [test_profile.py](tests/test_profile.py): link set and status vocabulary cover both files; section order, identity phrases and limit statements are asserted on the Chinese page; forbidden vocabulary and the byte ceiling live in the checker. Structure and presence, not truth: green is not proof.
 
-## Now
+---
+
+## Now · NOW
 
 - Working: ClaimLedger v2 (dispute closure, bitemporal claims, dependency backtracking) is on main, unreleased (v0.10.0 predates it); Phase B and storage merge: design only.
 - Not yet: domain randomization and sim-to-real validation for go2w; long-horizon g1 missions: goal, not result.
