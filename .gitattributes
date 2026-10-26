@@ -1,0 +1,2 @@
+# 页面仓库只展示 README；校验脚本不参与语言统计
+tests/** linguist-vendored

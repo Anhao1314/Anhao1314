@@ -1,62 +1,49 @@
 # Eason
 
-**人工智能本科生 · 2027 届** · Agent 基础设施 × 具身智能强化学习
+[中文](README.md) · [English](README.en.md)
 
-> 具身智能教会我:仿真跑通 ≠ 现实可靠。
-> 我把同一套证据纪律带进了 Agent 系统:检索命中 ≠ 结论现行,AI 输出 ≠ 可信依据。
->
-> **我在做的所有项目,都在回答同一个问题——怎样让复杂系统的结论可靠、可审计、不冒充现状。**
+> 仿真跑通 ≠ 现实可靠；检索命中 ≠ 结论现行；AI 输出 ≠ 可信依据。
+> 我做的所有系统都在回答同一个问题：**怎样让复杂系统的结论可靠、可审计、不冒充现状。**
 
-**人负责定义值得解决的问题;AI 负责探索道路;真实证据决定保留什么。**
-这份从失败经历中形成的研发假设,叫 [Life Finds a Way](https://github.com/Anhao1314/life-finds-a-way)。
+**人负责定义值得解决的问题，AI 负责探索道路，真实证据决定保留什么。**
+这条研发假设的完整展开在 [life-finds-a-way](https://github.com/Anhao1314/life-finds-a-way)。
 
----
+## 项目
 
-## 🧠 Agent 基础设施
+| 仓库 | 一句话 | 状态 |
+| --- | --- | --- |
+| [ClaimLedger](https://github.com/Anhao1314/ClaimLedger) | AI Agent 的决定台账：状态感知的声明库，过期结论不再冒充现状 | 开发中 |
+| [FCode](https://github.com/Anhao1314/FCode) | host 治理的 Agent Runtime：模型不掌权，每步落哈希链，全程可审计 | 实验中 |
+| [lastgreen](https://github.com/Anhao1314/lastgreen) | 编程 Agent 的完成验证器：完成需要“最后一次绿”的证据 | 实验中 |
+| [go2w-locomotion](https://github.com/Anhao1314/go2w-locomotion) | Go2/Go2W 关节级 RL 运动控制：Isaac Lab、Sim2Real、ONNX 部署 | 开发中 |
+| [g1-jev-swarm-lab](https://github.com/Anhao1314/g1-jev-swarm-lab) | Unitree G1 长时程任务研究平台：任务组织、执行反馈与失败处理 | 实验中 |
+| [RL-Sentinel](https://github.com/Anhao1314/RL-Sentinel) | Go2W RL 训练的风险回放：失败、指标与当时的决策可复查 | 工具 |
+| [flowcredit](https://github.com/Anhao1314/flowcredit) · [flowcredit-research](https://github.com/Anhao1314/flowcredit-research) | 风险智能基础设施与投研记忆：确定性代码承载结论，LLM 只做证据组织 | 维护中 |
 
-**[ClaimLedger · AI Agent 的决定台账](https://github.com/Anhao1314/ClaimLedger)**
-带状态(现行/已替代/有争议)与溯源的声明库:冲突在写入时强制摊开,过期结论不再冒充现状。检索基准过期命中 **54% → 0**;手写 MCP stdio 服务器接入 Claude Code / ZCode;纯标准库零依赖,300+ 测试双平台全绿。
+## 主线：ClaimLedger
 
-**[FCode · host 治理的 Agent Runtime](https://github.com/Anhao1314/FCode)**
-持久化、可审计的 Agent 运行时,带实时控制台。
+[![测试](https://github.com/Anhao1314/ClaimLedger/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/Anhao1314/ClaimLedger/actions/workflows/tests.yml) [![PyPI](https://img.shields.io/pypi/v/claim-ledger)](https://pypi.org/project/claim-ledger/)
 
-**[deep-native · 编程智能体对照实验](https://github.com/Anhao1314/deep-native)**
-检验技能、工作流与额外验证是否真正改善任务表现。早期对照尚未证明提升,失败结果同样保留。
+带状态（现行 / 已替代 / 有争议）与溯源的声明库：冲突在写入时强制摊开，开工简报受硬字节预算约束，MCP 与 Skill 双通道接入 Claude Code / ZCode。检索基准里，状态过滤把过期命中从 **54% 压到 0**，代价是 Recall@5 从 1.00 降到 0.92——两个数字都写在基准报告里。399 个测试，macOS / Linux CI，纯标准库零依赖。曾用名 CarryTrace / chat-distiller：名字换了，数据目录和入口都还在，老用户不破。
 
-## 🤖 具身智能与强化学习
+## 研发宪章
 
-**[Go2W · MoRA 分层导航](https://github.com/Anhao1314/Go2w-MoRA-navigation)**
-Unitree Go2W 在 MuJoCo 中的分层导航:PPO / BC / DAgger、课程学习、消融研究与可复现评估。
+- **目标先于路线。** 先说明为什么要做、做到什么程度，而不是先指定答案。
+- **探索必须守界。** 自主选择方法，不等于自行获得新的权限、预算或发布授权。
+- **失败也是证据。** 没复现的、没通过的、证据不足的结果保留归档，不当成没发生。
 
-**[G1 · 长时程任务研究](https://github.com/Anhao1314/g1-jev-swarm-lab)**
-Unitree G1 长时程任务的任务组织、执行反馈与失败处理仿真。
+## 边界，不藏在口号里
 
-**[RL-Sentinel · 训练风险回放](https://github.com/Anhao1314/RL-Sentinel)**
-按时间顺序回放训练状态与风险判断:失败、指标与当时的决策可被重新检查。
+- 这里的项目是个人研究系统，不是生产系统；
+- lastgreen 的 v0.1 试点结论与 v0.2 消融计划公开在仓库里，早期对照尚未证明质量提升；
+- flowcredit 的风险结论不代表已经校准的信用评级；
+- go2w 与 g1 的结果都在仿真中，仿真结果不等于实物可靠。
 
-## 💳 AI 原生决策系统
+## 校验
 
-**[FlowCredit · 风险智能基础设施](https://github.com/Anhao1314/flowcredit)**
-Evidence / Provenance 机制、确定性风险计算与 integrity veto:风险结论由确定性代码承载,LLM 负责证据组织。
+本页由 [tests/test_profile.py](tests/test_profile.py) 在 CI 中校验：仓库链接集合、章节顺序、状态词汇表、局限声明必须在场；禁用词汇表与字节预算上限定义在检查器里——单一真值源，本页连它们的字面都写不出。检查器只验证结构与在场性，不验证真伪——绿灯不是证明。
 
-**[FlowCredit Research · 可审查的研究记忆](https://github.com/Anhao1314/flowcredit-research)**
-投研场景的 versioned claims:证据出处、版本化判断与人工复核。
+## 现在
 
-## 🌱 我如何看待 AI Coding
-
-- **目标先于路线。** 先说明为什么要做、做到什么程度,而不是先指定答案。
-- **探索必须守界。** 自主选择方法,不等于自行获得新的权限、预算或发布授权。
-- **失败也是证据。** 保留无法复现、没有通过和证据不足的结果,不把工程活动当作能力增长。
-
-**"生命会自己寻求出路"不是放任 AI 一直运行,而是允许它改变道路,也允许它及时停止。**
-[完整的研发宪章、故事与实验边界 →](https://github.com/Anhao1314/life-finds-a-way)
-
-## 🎯 现在
-
-- 2027 届,在找 **AI Agent / 具身智能** 方向的实习
-- 在做:ClaimLedger 的存储合并(记忆卡片并入声明库)与事件溯源设计
-- 习惯:用创意编程和小工具保持手感;它们不进正式项目,但保持试错
-
----
-
-<sub>Eason · Anhao1314 · 学习、构建、验证、修正。</sub>
+- 在做：ClaimLedger 的 P1 存储合并（记忆卡片并入声明库，身份收敛，协议做薄）；lastgreen 的 v0.2 消融实验。
+- 习惯：用小工具和创意编程保持手感——它们不进正式仓库，但保持试错。
