@@ -1,6 +1,8 @@
 # Eason
 
-[中文](README.md) · [English](README.en.md)
+[中文](README.md) · [English](README.en.md) · [Visual home](https://anhao1314.github.io)
+
+<!-- The visual home is a single-file pixel scroll-narrative site; its visual language is a study of Moonshot AI (careers.kimi.com) with no affiliation. Its link intentionally stays out of the repo link set checked below. -->
 
 Independent researcher on AI and complex systems: how systems study, decide, act — and answer for their conclusions.
 

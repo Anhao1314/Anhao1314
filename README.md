@@ -1,6 +1,8 @@
 # Eason
 
-[中文](README.md) · [English](README.en.md)
+[中文](README.md) · [English](README.en.md) · [视觉主页](https://anhao1314.github.io)
+
+<!-- 视觉主页为单文件像素滚动叙事站点，视觉语言学习自 Moonshot AI（careers.kimi.com），与其无从属关系；本页 CI 校验其链接不进入仓库链接集合。 -->
 
 独立研究者，研究 AI 与复杂系统：智能如何研究、判断、行动，并对自己给出的结论负责。
 
