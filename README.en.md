@@ -29,7 +29,7 @@ No shared architecture — one set of questions: what deserves trust, how far an
 | Repo | One line | Status |
 | --- | --- | --- |
 | [go2w-locomotion](https://github.com/Anhao1314/go2w-locomotion) | Go2W wheeled navigation (MuJoCo) archived;<br>Go2 joint-level RL (Isaac Lab) passed three seeds, artifacts unpublished | active |
-| [g1-jev-swarm-lab](https://github.com/Anhao1314/g1-jev-swarm-lab) | Single-G1 testbed (MuJoCo): task graphs, strict judging; failures block dependents,<br>physical halt opt-in | experiment |
+| [g1-jev-swarm-lab](https://github.com/Anhao1314/g1-jev-swarm-lab) | Single-G1 testbed (MuJoCo): task graphs, strict judging;<br>failures block dependents, physical halt opt-in | experiment |
 | [RL-Sentinel](https://github.com/Anhao1314/RL-Sentinel) | Risk replay for RL training: failures, metrics, the moment's decisions, re-checkable, misses included | tool |
 
 ### AI-native financial intelligence
