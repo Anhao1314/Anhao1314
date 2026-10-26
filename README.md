@@ -28,16 +28,16 @@
 
 | 仓库 | 一句话 | 状态 |
 | --- | --- | --- |
-| [go2w-locomotion](https://github.com/Anhao1314/go2w-locomotion) | Go2W 轮足导航（MuJoCo）已归档；Go2 关节级 RL（Isaac Lab）三种子达标，成功策略工件未公开 | 开发中 |
-| [g1-jev-swarm-lab](https://github.com/Anhao1314/g1-jev-swarm-lab) | 单台 G1 试验台（MuJoCo）：任务图、严格判定，失败阻断依赖；物理停机为 opt-in 实验路径 | 实验中 |
+| [go2w-locomotion](https://github.com/Anhao1314/go2w-locomotion) | Go2W 轮足导航（MuJoCo）已归档；<br>Go2 关节级 RL（Isaac Lab）三种子达标，成功策略工件未公开 | 开发中 |
+| [g1-jev-swarm-lab](https://github.com/Anhao1314/g1-jev-swarm-lab) | 单台 G1 试验台（MuJoCo）：任务图、严格判定，失败阻断依赖；<br>物理停机为 opt-in 实验路径 | 实验中 |
 | [RL-Sentinel](https://github.com/Anhao1314/RL-Sentinel) | RL 训练的风险回放：失败、指标与当时的决策可复查，含规则漏检的负结果 | 工具 |
 
 ### AI 原生金融智能
 
 | 仓库 | 一句话 | 状态 |
 | --- | --- | --- |
-| [flowcredit](https://github.com/Anhao1314/flowcredit) | 风险智能 API：确定性规则承载结论，模型提取需显式同意，PD 与预期损失仍为空 | 维护中 |
-| [flowcredit-research](https://github.com/Anhao1314/flowcredit-research) | 投研记忆与证据推理：观点可追溯、修订留痕，模型无裁决权；盲测未通过 | 实验中 |
+| [flowcredit](https://github.com/Anhao1314/flowcredit) | 风险智能 API：确定性规则承载结论，<br>模型提取需显式同意，PD 与预期损失仍为空 | 维护中 |
+| [flowcredit-research](https://github.com/Anhao1314/flowcredit-research) | 投研记忆与证据推理：观点可追溯、修订留痕，<br>模型无裁决权；盲测未通过 | 实验中 |
 
 ## 主线：ClaimLedger
 

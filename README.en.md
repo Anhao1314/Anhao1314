@@ -28,16 +28,16 @@ No shared architecture — one set of questions: what deserves trust, how far an
 
 | Repo | One line | Status |
 | --- | --- | --- |
-| [go2w-locomotion](https://github.com/Anhao1314/go2w-locomotion) | Go2W wheeled navigation (MuJoCo) archived; Go2 joint-level RL (Isaac Lab) passed three seeds, artifacts unpublished | active |
-| [g1-jev-swarm-lab](https://github.com/Anhao1314/g1-jev-swarm-lab) | Single-G1 testbed (MuJoCo): task graphs, strict judging; failures block dependents, physical halt opt-in | experiment |
-| [RL-Sentinel](https://github.com/Anhao1314/RL-Sentinel) | Risk replay for RL training: failures, metrics, the moment's decisions, re-checkable — misses included | tool |
+| [go2w-locomotion](https://github.com/Anhao1314/go2w-locomotion) | Go2W wheeled navigation (MuJoCo) archived;<br>Go2 joint-level RL (Isaac Lab) passed three seeds, artifacts unpublished | active |
+| [g1-jev-swarm-lab](https://github.com/Anhao1314/g1-jev-swarm-lab) | Single-G1 testbed (MuJoCo): task graphs, strict judging; failures block dependents,<br>physical halt opt-in | experiment |
+| [RL-Sentinel](https://github.com/Anhao1314/RL-Sentinel) | Risk replay for RL training: failures, metrics, the moment's decisions, re-checkable, misses included | tool |
 
 ### AI-native financial intelligence
 
 | Repo | One line | Status |
 | --- | --- | --- |
-| [flowcredit](https://github.com/Anhao1314/flowcredit) | Risk intelligence API: deterministic rules carry conclusions, extraction consent-gated, PD and expected loss null | maintenance |
-| [flowcredit-research](https://github.com/Anhao1314/flowcredit-research) | Investment-research memory: claims traceable, revisions recorded, model holds no authority; blind test failed | experiment |
+| [flowcredit](https://github.com/Anhao1314/flowcredit) | Risk intelligence API: deterministic rules carry conclusions,<br>extraction consent-gated, PD and expected loss null | maintenance |
+| [flowcredit-research](https://github.com/Anhao1314/flowcredit-research) | Investment-research memory: claims traceable, revisions recorded,<br>model holds no authority; blind test failed | experiment |
 
 ## Main line: ClaimLedger
 
@@ -74,10 +74,10 @@ Synthetic benchmark (40 sessions, 24 queries), retrieval-only: on conflict queri
 
 ## Verification
 
-CI checks this page with [test_profile.py](tests/test_profile.py): link set and status vocabulary cover both files; section order, identity phrases and limit statements are asserted on the Chinese page; forbidden vocabulary and the byte ceiling live in the checker. Structure and presence, not truth: a green check is not proof.
+CI checks this page via [test_profile.py](tests/test_profile.py): link set and status vocabulary cover both files; section order, identity phrases and limit statements are asserted on the Chinese page; forbidden vocabulary and the byte ceiling live in the checker. Structure and presence, not truth: green is not proof.
 
 ## Now
 
-- Working: ClaimLedger v2 (dispute closure, bitemporal claims, dependency backtracking) is on main, unreleased (v0.10.0 predates it); Phase B and the storage merge: design only.
+- Working: ClaimLedger v2 (dispute closure, bitemporal claims, dependency backtracking) is on main, unreleased (v0.10.0 predates it); Phase B and storage merge: design only.
 - Not yet: domain randomization and sim-to-real validation for go2w; long-horizon g1 missions: goal, not result.
 - Habit: small tools and creative coding keep the trial-and-error instinct — never in formal repos.
