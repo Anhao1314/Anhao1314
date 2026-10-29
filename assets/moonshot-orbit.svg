@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+<title id="title">Eason 的项目轨道</title>
+<desc id="desc">ClaimLedger 位于中心，其余七个仓库沿三条轨道环绕。</desc>
+<defs>
+  <pattern id="checker" width="6" height="6" patternUnits="userSpaceOnUse"><rect width="6" height="6" fill="#000"/><path d="M0 0H3V3H0ZM3 3H6V6H3Z" fill="#fff"/></pattern>
+  <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><path d="M0 0H1200" stroke="#fff" stroke-width="1" opacity=".025"/></pattern>
+</defs>
+<rect width="1200" height="470" fill="#000"/>
+<g fill="#fff" shape-rendering="crispEdges">
+<rect x="612" y="440" width="2" height="2" opacity="0.28"/>
+<rect x="648" y="232" width="4" height="4" opacity="1"/>
+<rect x="752" y="80" width="2" height="2" opacity="0.62"/>
+<rect x="928" y="20" width="2" height="2" opacity="1"/>
+<rect x="948" y="28" width="2" height="2" opacity="0.28"/>
+<rect x="1040" y="228" width="2" height="2" opacity="1"/>
+<rect x="900" y="196" width="2" height="2" opacity="0.42"/>
+<rect x="92" y="316" width="2" height="2" opacity="0.42"/>
+<rect x="460" y="392" width="2" height="2" opacity="1"/>
+<rect x="772" y="308" width="2" height="2" opacity="0.62"/>
+<rect x="192" y="432" width="4" height="4" opacity="0.42"/>
+<rect x="1008" y="316" width="4" height="4" opacity="0.42"/>
+<rect x="392" y="424" width="2" height="2" opacity="1"/>
+<rect x="680" y="360" width="2" height="2" opacity="1"/>
+<rect x="252" y="56" width="2" height="2" opacity="0.85"/>
+<rect x="96" y="304" width="2" height="2" opacity="1"/>
+<rect x="592" y="436" width="2" height="2" opacity="0.28"/>
+<rect x="776" y="160" width="2" height="2" opacity="0.85"/>
+<rect x="1144" y="124" width="2" height="2" opacity="0.42"/>
+<rect x="236" y="332" width="2" height="2" opacity="0.85"/>
+<rect x="504" y="184" width="2" height="2" opacity="1"/>
+<rect x="224" y="212" width="2" height="2" opacity="0.85"/>
+<rect x="88" y="44" width="4" height="4" opacity="0.85"/>
+<rect x="64" y="96" width="2" height="2" opacity="0.28"/>
+<rect x="472" y="428" width="2" height="2" opacity="1"/>
+<rect x="928" y="396" width="2" height="2" opacity="0.62"/>
+<rect x="52" y="416" width="4" height="4" opacity="0.85"/>
+<rect x="412" y="32" width="2" height="2" opacity="0.62"/>
+<rect x="972" y="296" width="2" height="2" opacity="0.85"/>
+<rect x="624" y="124" width="2" height="2" opacity="0.28"/>
+<rect x="1156" y="284" width="2" height="2" opacity="1"/>
+<rect x="1160" y="432" width="2" height="2" opacity="0.62"/>
+<rect x="224" y="228" width="2" height="2" opacity="0.28"/>
+<rect x="928" y="404" width="2" height="2" opacity="0.85"/>
+<rect x="356" y="328" width="4" height="4" opacity="0.28"/>
+<rect x="508" y="292" width="2" height="2" opacity="0.85"/>
+<rect x="856" y="168" width="2" height="2" opacity="0.62"/>
+<rect x="240" y="28" width="2" height="2" opacity="0.62"/>
+<rect x="1164" y="388" width="4" height="4" opacity="0.42"/>
+<rect x="356" y="352" width="2" height="2" opacity="0.62"/>
+<rect x="1168" y="368" width="2" height="2" opacity="0.42"/>
+<rect x="1168" y="256" width="4" height="4" opacity="0.62"/>
+<rect x="28" y="188" width="4" height="4" opacity="0.28"/>
+<rect x="308" y="396" width="4" height="4" opacity="0.42"/>
+<rect x="80" y="104" width="4" height="4" opacity="0.85"/>
+<rect x="184" y="228" width="2" height="2" opacity="0.85"/>
+<rect x="1124" y="384" width="2" height="2" opacity="1"/>
+<rect x="1108" y="168" width="2" height="2" opacity="0.28"/>
+<rect x="480" y="44" width="4" height="4" opacity="0.85"/>
+<rect x="56" y="360" width="4" height="4" opacity="1"/>
+<rect x="860" y="164" width="2" height="2" opacity="0.85"/>
+<rect x="732" y="428" width="2" height="2" opacity="0.62"/>
+<rect x="716" y="96" width="4" height="4" opacity="0.28"/>
+<rect x="876" y="432" width="4" height="4" opacity="1"/>
+<rect x="540" y="288" width="2" height="2" opacity="0.28"/>
+<rect x="804" y="124" width="2" height="2" opacity="0.42"/>
+<rect x="1048" y="204" width="2" height="2" opacity="1"/>
+<rect x="964" y="76" width="2" height="2" opacity="1"/>
+<rect x="924" y="16" width="2" height="2" opacity="0.62"/>
+<rect x="244" y="140" width="4" height="4" opacity="0.28"/>
+<rect x="852" y="428" width="2" height="2" opacity="0.62"/>
+<rect x="428" y="200" width="2" height="2" opacity="1"/>
+<rect x="204" y="108" width="4" height="4" opacity="1"/>
+<rect x="756" y="164" width="2" height="2" opacity="1"/>
+<rect x="364" y="36" width="2" height="2" opacity="0.42"/>
+<rect x="56" y="84" width="2" height="2" opacity="0.62"/>
+<rect x="980" y="376" width="2" height="2" opacity="1"/>
+<rect x="116" y="436" width="2" height="2" opacity="1"/>
+<rect x="228" y="180" width="2" height="2" opacity="0.42"/>
+<rect x="736" y="60" width="2" height="2" opacity="0.42"/>
+<rect x="440" y="232" width="2" height="2" opacity="1"/>
+<rect x="472" y="288" width="4" height="4" opacity="0.62"/>
+</g>
+<g fill="none" stroke="#3a3a3a" stroke-dasharray="5 7" shape-rendering="crispEdges">
+  <ellipse cx="600" cy="226" rx="230" ry="75"/>
+  <ellipse cx="600" cy="226" rx="355" ry="122"/>
+  <ellipse cx="600" cy="226" rx="490" ry="174"/>
+</g>
+<text x="42" y="46" fill="#777" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" letter-spacing="2">// EIGHT REPOSITORIES · THREE ORBITS · ONE EVIDENCE ODYSSEY</text>
+<g><circle cx="235" cy="183" r="12" fill="url(#checker)" stroke="#d8d8d8"/><text x="235" y="217" text-anchor="middle" fill="#fff" font-size="16">lastgreen</text></g><g><circle cx="510" cy="124" r="12" fill="url(#checker)" stroke="#d8d8d8"/><text x="510" y="158" text-anchor="middle" fill="#fff" font-size="16">FCode</text></g><g><circle cx="265" cy="310" r="13" fill="url(#checker)" stroke="#d8d8d8"/><text x="265" y="344" text-anchor="middle" fill="#fff" font-size="16">go2w-locomotion</text></g><g><circle cx="760" cy="318" r="13" fill="url(#checker)" stroke="#d8d8d8"/><text x="760" y="352" text-anchor="middle" fill="#fff" font-size="16">g1-jev-swarm-lab</text></g><g><circle cx="950" cy="220" r="13" fill="url(#checker)" stroke="#d8d8d8"/><text x="930" y="254" text-anchor="end" fill="#fff" font-size="16">RL-Sentinel</text></g><g><circle cx="450" cy="365" r="13" fill="url(#checker)" stroke="#d8d8d8"/><text x="450" y="399" text-anchor="middle" fill="#fff" font-size="16">flowcredit</text></g><g><circle cx="1010" cy="112" r="13" fill="url(#checker)" stroke="#d8d8d8"/><text x="990" y="146" text-anchor="end" fill="#fff" font-size="16">flowcredit-research</text></g>
+<ellipse cx="600" cy="226" rx="72" ry="22" fill="none" stroke="#777"/>
+<circle cx="600" cy="226" r="43" fill="url(#checker)" stroke="#fff" stroke-width="2"/>
+<text x="600" y="292" text-anchor="middle" fill="#fff" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="20">ClaimLedger</text>
+<text x="600" y="316" text-anchor="middle" fill="#888" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="14">主线 · v0.10.0</text>
+<rect width="1200" height="470" fill="url(#scan)"/>
+</svg>
