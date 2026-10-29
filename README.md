@@ -1,26 +1,30 @@
-![EASON](assets/banner.png)
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/profile-light.svg">
+    <img alt="Eason — Life finds a way. AI and complex systems." src="assets/profile-light.svg" width="100%">
+  </picture>
+</p>
 
 # Eason
 
 [中文](README.md) · [English](README.en.md) · [视觉主页](https://anhao1314.github.io)
 
-<!-- 视觉主页为单文件像素滚动叙事站点，视觉语言学习自 Moonshot AI（careers.kimi.com），与其无从属关系；本页 CI 校验其链接不进入仓库链接集合。 -->
-
-独立研究者，研究 AI 与复杂系统：智能如何研究、判断、行动，并对自己给出的结论负责。
+独立研究者，研究 **AI 与复杂系统**：智能如何研究、判断、行动，并对自己给出的结论负责。
 
 > **生命会自己寻求出路。** Life finds a way.
 
-**研究假设：** 人负责定义值得解决的问题，AI 负责探索道路，真实证据决定保留什么。完整展开见 [life-finds-a-way](https://github.com/Anhao1314/life-finds-a-way)。
+**研究假设**　人负责定义值得解决的问题，AI 负责探索道路，真实证据决定保留什么。完整展开见 [life-finds-a-way](https://github.com/Anhao1314/life-finds-a-way)。
 
-**核心问题：** 怎样让复杂系统的结论可靠、可审计、不冒充现状。
+**核心问题**　怎样让复杂系统的结论可靠、可审计、不冒充现状。
 
-> 仿真跑通 ≠ 现实可靠；检索命中 ≠ 结论现行；AI 输出 ≠ 可信依据。
+> 仿真跑通 ≠ 现实可靠　·　检索命中 ≠ 结论现行　·　AI 输出 ≠ 可信依据
 
 ---
 
 ## 项目 · REPOS
 
-这些仓库不共享架构，只共享一组问题：信息凭什么可信、Agent 能自主到什么程度、任务完成如何证明、仿真成功怎样变成现实能力、AI 参与决策后如何保留证据与局限。
+这些仓库不共享架构，只共享一组问题：信息凭什么可信、Agent 能自主到什么程度、任务完成如何证明、仿真成功怎样变成现实能力。
 
 ### 证据原生 AI 与 Agent 运行时
 
@@ -49,23 +53,17 @@
 
 ## 主线：ClaimLedger · LEDGER
 
-![测试](https://github.com/Anhao1314/ClaimLedger/actions/workflows/tests.yml/badge.svg) [v0.10.0](https://github.com/Anhao1314/ClaimLedger/releases/latest)，421 个测试跑在 macOS/Linux CI 上，纯标准库零依赖。
+[![Tests](https://github.com/Anhao1314/ClaimLedger/actions/workflows/tests.yml/badge.svg)](https://github.com/Anhao1314/ClaimLedger/actions/workflows/tests.yml)　[v0.10.0](https://github.com/Anhao1314/ClaimLedger/releases/latest) · macOS / Linux · 纯标准库零依赖
 
-### 研究问题
+长时程工作的记忆失效不是“检索不准”：过期结论仍被当作现行、冲突在读取时被静默合并、争议无人裁决。ClaimLedger 用 **声明 + 状态 + 来源** 组织记忆；冲突写入必须显式替代或提出争议，`--at` 可重建任意时刻的认知。
 
-长时程工作的记忆失效不是“检索不准”，而是三种失效：过期结论仍被当作现行、冲突在读取时被静默合并、争议无人裁决。
+| 过期命中 @5 | Recall @5 | 工程验证 |
+| :---: | :---: | :---: |
+| **54% → 0** | **1.00 → 0.92** | **421 tests** |
 
-### 设计机制
+数字来自[基准报告](https://github.com/Anhao1314/ClaimLedger/blob/main/benchmarks/benchmark-results.md)。拒绝清单同样重要：不做向量库、自动记忆捕获、守护进程或云同步。
 
-一条声明 = 一句话 + 状态（现行 / 已替代 / 有争议）+ 来源。冲突写入直接拒写，必须显式替代或提出争议；开工简报受硬字节预算约束，字节用量与省略条目都可核验；`--at` 可重建任意时刻的认知。拒绝清单同样重要：不做向量库、不做自动记忆捕获、不做守护进程或云同步。
-
-### 实验结果
-
-相对原始日志检索，状态过滤把过期命中（@5）从 54% 压到 0；代价是 Recall@5 从 1.00（结构化记忆）降到 0.92——两个数字都在[基准报告](https://github.com/Anhao1314/ClaimLedger/blob/main/benchmarks/benchmark-results.md)里。
-
-### 仍然存在的限制
-
-基准是合成的（40 个会话、24 个查询），只测检索：冲突类查询上 Recall@5 由 1.00 降至 0.50，过期目标的召回未测量；冲突检测只摊开疑似冲突，不做语义裁决。它管状态与来源，不判断真伪，不是 AI 记忆、Agent 可靠性或事实核验的通用解。
+**仍然存在的限制**　基准是合成的（40 个会话、24 个查询），只测检索；冲突类查询 Recall@5 降至 0.50，过期目标召回未测量。它管状态与来源，不判断真伪，不是 AI 记忆、Agent 可靠性或事实核验的通用解。
 
 ---
 
@@ -88,12 +86,12 @@
 
 ## 校验 · VERIFY
 
-CI 用 [test_profile.py](tests/test_profile.py) 校验本页：链接集合与状态词汇覆盖两份文件，章节顺序、身份短语与上述局限声明在中文页上断言；禁用词汇表与字节上限定义在检查器里。检查器只验证结构与在场性，不验证真伪——绿灯不是证明。
+CI 用 [test_profile.py](tests/test_profile.py) 校验本页：链接集合与状态词汇覆盖两份文件，章节顺序、身份短语与局限声明在中文页上断言；禁用词汇表与字节上限定义在检查器里。检查器只验证结构与在场性，不验证真伪——绿灯不是证明。
 
 ---
 
 ## 现在 · NOW
 
-- 在做：ClaimLedger v2 争议闭合、双时态与依赖回溯已合入 main，尚未进发布版（v0.10.0 不含）；Phase B 与存储合并仅设计定稿。
-- 未做：go2w 的域随机化与 sim2real 验证；g1 的长时程任务仍是目标而非结果。
-- 习惯：用小工具与创意编程保持试错的手感——它们不进正式仓库。
+- **在做**　ClaimLedger v2 争议闭合、双时态与依赖回溯已合入 main，尚未进发布版；Phase B 与存储合并仅设计定稿。
+- **未做**　go2w 的域随机化与 sim2real 验证；g1 的长时程任务仍是目标而非结果。
+- **习惯**　用小工具与创意编程保持试错的手感——它们不进正式仓库。
