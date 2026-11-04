@@ -1,7 +1,7 @@
-"""Checks for the developer-first GitHub profile, not for project capabilities.
+"""Checks for the ledger-first GitHub profile, not for project capabilities.
 
-单一真值源：本文件拥有本页的禁用词汇表与字节预算上限——README 只能指向它们，
-写不出它们的字面。
+单一真值源：本文件拥有本页的状态记号词汇表、声明集合与字节预算上限——
+README 只能指向它们，写不出它们的定义。
 """
 from pathlib import Path
 import re
@@ -25,21 +25,28 @@ REPOSITORIES = {
 }
 
 SECTIONS = [
-    "## 主线：ClaimLedger",
-    "## 项目",
-    "## 研发宪章",
-    "## 边界，不藏在口号里",
-    "## 校验",
+    "## 主线",
+    "## 声明台账",
+    "## 检验记录",
     "## 现在",
+    "## 校验",
+]
+SECTIONS_EN = [
+    "## Main line",
+    "## Claim ledger",
+    "## Test record",
+    "## Now",
+    "## Verification",
 ]
 
-# 状态列只允许从这张词汇表取值（对齐 DESIGN.md 的语义 token 思路）。
-STATUS_VOCABULARY = {"开发中", "实验中", "工具", "维护中"}
-STATUS_VOCABULARY_EN = {"active", "experiment", "tool", "maintenance"}
+# 状态列只允许从这张记号表取值；记号语言无关，两份文件共用。
+STATUS_MARKS = {"●", "◐", "○", "✕", "⚡︎"}
+
+CLAIM_ROWS_MIN = 8
 
 BYTE_BUDGET = 6144
 
-# 这是开发者的工作台页面，不是简历。禁用词汇在本页任何地方都不许出现——
+# 这是研究者的工作台页面，不是简历。禁用词汇在本页任何地方都不许出现——
 # 包括"校验"一节的自我描述。
 FORBIDDEN_ZH = ("实习", "简历", "求职", "招聘", "应届", "校招", "秋招", "春招", "offer")
 FORBIDDEN_EN = re.compile(r"\b(intern|internship|resume|recruiter|hiring)\b", re.IGNORECASE)
@@ -48,12 +55,14 @@ EMOJI = re.compile(r"[\u2600-\u27BF\u2B00-\u2BFF\uFE0F\U0001F000-\U0001FAFF]")
 
 
 class TextProfileTests(unittest.TestCase):
-    def test_identity_and_thesis(self):
+    def test_identity_and_creeds(self):
         for phrase in (
             "# Eason",
-            "怎样让复杂系统的结论可靠、可审计、不冒充现状",
+            "复杂系统的结论，如何不冒充现状",
             "人负责定义值得解决的问题",
             "失败也是证据",
+            "结论的真伪，在链接里",
+            "样本小，勿外推",
         ):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase, README)
@@ -72,23 +81,27 @@ class TextProfileTests(unittest.TestCase):
             with self.subTest(repo=repo):
                 self.assertIn(REPO_PREFIX + repo, README)
 
-    def test_project_table_status_comes_from_vocabulary(self):
+    def test_claim_table_status_uses_marks(self):
         rows = [line for line in README.splitlines() if line.startswith("| [")]
-        self.assertGreaterEqual(len(rows), 7)
+        self.assertGreaterEqual(len(rows), CLAIM_ROWS_MIN)
         for row in rows:
-            status = row.rstrip().split("|")[-2].strip()
-            with self.subTest(status=status):
-                self.assertIn(status, STATUS_VOCABULARY)
+            mark = row.rstrip().split("|")[-2].strip()
+            with self.subTest(mark=mark):
+                self.assertIn(mark, STATUS_MARKS)
 
-    def test_limitations_stay_visible(self):
+    def test_failure_record_stays_visible(self):
         for phrase in (
-            "不是生产系统",
-            "尚未证明质量提升",
-            "不代表已经校准的信用评级",
+            "0 胜 9 平 1 负",
+            "盲测未通过，归档在案",
             "仿真结果不等于实物可靠",
+            "非生产系统",
         ):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase, README)
+
+    def test_legend_asserts_no_replication(self):
+        self.assertIn("● 至今无一行适用", README)
+        self.assertIn("未立声明者不上墙", README)
 
     def test_forbidden_vocabulary_absent(self):
         for word in FORBIDDEN_ZH:
@@ -120,14 +133,20 @@ class TextProfileTests(unittest.TestCase):
 
 
 class EnglishProfileTests(unittest.TestCase):
-    def test_identity_and_thesis(self):
+    def test_identity_and_creeds(self):
         for phrase in (
             "# Eason",
-            "unable to masquerade as present state",
+            "stop masquerading as the present",
             "Failure is evidence",
+            "the truth of a conclusion lives in the links",
         ):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase, README_EN)
+
+    def test_section_order_and_count(self):
+        positions = [README_EN.index(section) for section in SECTIONS_EN]
+        self.assertEqual(positions, sorted(positions))
+        self.assertEqual(len(re.findall(r"(?m)^## ", README_EN)), len(SECTIONS_EN))
 
     def test_link_set_matches_chinese(self):
         destinations = set(
@@ -135,13 +154,13 @@ class EnglishProfileTests(unittest.TestCase):
         )
         self.assertEqual(destinations, REPOSITORIES)
 
-    def test_status_vocabulary(self):
+    def test_claim_table_status_uses_marks(self):
         rows = [line for line in README_EN.splitlines() if line.startswith("| [")]
-        self.assertGreaterEqual(len(rows), 7)
+        self.assertGreaterEqual(len(rows), CLAIM_ROWS_MIN)
         for row in rows:
-            status = row.rstrip().split("|")[-2].strip()
-            with self.subTest(status=status):
-                self.assertIn(status, STATUS_VOCABULARY_EN)
+            mark = row.rstrip().split("|")[-2].strip()
+            with self.subTest(mark=mark):
+                self.assertIn(mark, STATUS_MARKS)
 
 
 if __name__ == "__main__":
