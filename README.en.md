@@ -6,6 +6,8 @@ Independent researcher. One question: **how the conclusions of complex systems s
 
 > People define the problems worth solving. AI explores the paths. Real evidence decides what survives.
 
+🔭 **Observation point**　2026-08-01 → 2026-11-05
+
 ![Claim ledger timeline: change events, observation windows and the now cursor, Aug–Nov 2026](assets/ledger-timeline.svg)
 
 ## Main line
@@ -39,9 +41,10 @@ The benchmark is synthetic (40 sessions / 24 queries): **small n, do not extrapo
 
 ## Now
 
-- **Working**　ClaimLedger v2 dispute closure, bitemporal claims and dependency backtracking on main, unreleased;
+- 📍 **Working**　ClaimLedger v2 dispute closure, bitemporal claims and dependency backtracking on main, unreleased;
 - **Not yet**　sim2real validation for go2w; long-horizon g1 missions;
-- **Habit**　small tools and creative coding keep the trial-and-error instinct — never in formal repos.
+- **Habit**　small tools and creative coding keep the trial-and-error instinct — never in formal repos;
+- 📮 **To me, 30 days out**　Trust only rows with a date and a source; the rest is a draft.
 
 ## Verification
 
@@ -51,4 +54,4 @@ Personal research systems, not production. Claims without a ledger entry stay of
 
 Status marks: **●** replicated · **◐** evidenced, small n · **○** unproven · **✕** refuted, archived · **⚡︎** disputed — **● has never applied to a single row.**
 
-<div align="right"><sub>Life finds a way</sub></div>
+<div align="right"><sub>🌱 Life finds a way</sub></div>

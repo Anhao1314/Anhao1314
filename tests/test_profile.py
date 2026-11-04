@@ -53,6 +53,12 @@ FORBIDDEN_EN = re.compile(r"\b(intern|internship|resume|recruiter|hiring)\b", re
 
 EMOJI = re.compile(r"[\u2600-\u27BF\u2B00-\u2BFF\uFE0F\U0001F000-\U0001FAFF]")
 
+# emoji 编制表：只允许有职务的 emoji 上页，出现即必须在编。
+# 状态记号 ✕ 与 ⚡︎（争议中）本身在 emoji 区段内，属数据层编制；
+# 🔭 观察点 / 📍 现在 / 📮 交接 / 🌱 页脚印章为四枚门牌，两份文件都必须到岗。
+ALLOWED_EMOJI = {"✕", "⚡", "🔭", "📍", "📮", "🌱"}
+SERVED_EMOJI = {"🔭", "📍", "📮", "🌱"}
+
 
 class TextProfileTests(unittest.TestCase):
     def test_identity_and_creeds(self):
@@ -118,6 +124,17 @@ class TextProfileTests(unittest.TestCase):
             if line.startswith("#"):
                 with self.subTest(line=line):
                     self.assertIsNone(EMOJI.search(line), "章节标题不用 emoji")
+
+    def test_emoji_admission_is_roster_controlled(self):
+        for name, text in (("zh", README), ("en", README_EN)):
+            found = set(EMOJI.findall(text))
+            with self.subTest(name=name, stray=sorted(found - ALLOWED_EMOJI)):
+                self.assertLessEqual(found, ALLOWED_EMOJI, "出现无编制 emoji")
+
+    def test_roster_emoji_are_served(self):
+        for name, text in (("zh", README), ("en", README_EN)):
+            with self.subTest(name=name, missing=sorted(SERVED_EMOJI - set(EMOJI.findall(text)))):
+                self.assertLessEqual(SERVED_EMOJI, set(EMOJI.findall(text)), "编制内 emoji 必须到岗")
 
     def test_byte_budget(self):
         for name, text in (("README.md", README), ("README.en.md", README_EN)):
