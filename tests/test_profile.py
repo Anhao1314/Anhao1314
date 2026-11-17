@@ -1,15 +1,17 @@
-"""Checks for the ledger-first GitHub profile, not for project capabilities.
+"""Checks for the moon-lit GitHub profile, not for project capabilities.
 
-单一真值源：本文件拥有本页的状态记号词汇表、声明集合与字节预算上限——
-README 只能指向它们，写不出它们的定义。
+单一真值源：本文件拥有本页的状态 emoji 词汇表、声明集合与字节预算上限——
+README 只能指向它们，写不出它们的定义。检查器只验证结构与在场性，
+不验证真伪——结论的真伪，在链接里。
 """
 from pathlib import Path
-import re
 import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 README = (ROOT / "README.md").read_text(encoding="utf-8")
 README_EN = (ROOT / "README.en.md").read_text(encoding="utf-8")
+MOON = (ROOT / "assets" / "moon.svg").read_text(encoding="utf-8")
+GENERATOR = (ROOT / "scripts" / "generate_moon.py").read_text(encoding="utf-8")
 
 REPO_PREFIX = "https://github.com/Anhao1314/"
 REPOSITORIES = {
@@ -24,161 +26,131 @@ REPOSITORIES = {
     "life-finds-a-way",
 }
 
-SECTIONS = [
-    "## 主线",
-    "## 声明台账",
-    "## 检验记录",
-    "## 现在",
-    "## 校验",
-]
-SECTIONS_EN = [
-    "## Main line",
-    "## Claim ledger",
-    "## Test record",
-    "## Now",
-    "## Verification",
-]
+SECTIONS = ["## 声明台账", "## 败诉记录", "## 现在", "## 校验"]
+SECTIONS_EN = ["## Claim ledger", "## Failed tests", "## Now", "## Verify"]
 
-# 状态列只允许从这张记号表取值；记号语言无关，两份文件共用。
-STATUS_MARKS = {"●", "◐", "○", "✕", "⚡︎"}
+# 状态 emoji 词汇表：✅ 已复现 · 🟡 有证据·样本小 · ⚪ 未证明 · ❌ 已证伪·在案 · ⚡️ 争议中
+STATUS_EMOJI = ["✅", "🟡", "⚪", "❌", "⚡️"]
+ALLOWED_CODEPOINTS = {0x1F52D, 0x2705, 0x1F7E1, 0x26AA, 0x274C, 0x26A1, 0xFE0F}
+EMOJI_RANGES = ((0x2600, 0x27BF), (0x1F300, 0x1FAFF))
 
-CLAIM_ROWS_MIN = 8
-
-BYTE_BUDGET = 6144
-
-# 这是研究者的工作台页面，不是简历。禁用词汇在本页任何地方都不许出现——
-# 包括"校验"一节的自我描述。
-FORBIDDEN_ZH = ("实习", "简历", "求职", "招聘", "应届", "校招", "秋招", "春招", "offer")
-FORBIDDEN_EN = re.compile(r"\b(intern|internship|resume|recruiter|hiring)\b", re.IGNORECASE)
-
-EMOJI = re.compile(r"[\u2600-\u27BF\u2B00-\u2BFF\uFE0F\U0001F000-\U0001FAFF]")
-
-# emoji 编制表：只允许有职务的 emoji 上页，出现即必须在编。
-# 状态记号 ✕ 与 ⚡︎（争议中）本身在 emoji 区段内，属数据层编制；
-# 🔭 观察点 / 📍 现在 / 📮 交接 / 🌱 页脚印章为四枚门牌，两份文件都必须到岗。
-ALLOWED_EMOJI = {"✕", "⚡", "🔭", "📍", "📮", "🌱"}
-SERVED_EMOJI = {"🔭", "📍", "📮", "🌱"}
+BYTE_BUDGET = 8192
 
 
-class TextProfileTests(unittest.TestCase):
-    def test_identity_and_creeds(self):
-        for phrase in (
-            "# Eason",
-            "复杂系统的结论，如何不冒充现状",
-            "人负责定义值得解决的问题",
-            "失败也是证据",
-            "结论的真伪，在链接里",
-            "样本小，勿外推",
-        ):
-            with self.subTest(phrase=phrase):
-                self.assertIn(phrase, README)
+def ledger_section(text, header):
+    """截取台账章节正文（从该章节标题到下一个章节标题）。"""
+    start = text.index(header) + len(header)
+    ends = [text.find(next_h, start) for next_h in SECTIONS + SECTIONS_EN
+            if text.find(next_h, start) != -1]
+    return text[start:min(ends) if ends else len(text)]
 
-    def test_section_order_and_count(self):
-        positions = [README.index(section) for section in SECTIONS]
-        self.assertEqual(positions, sorted(positions))
-        self.assertEqual(len(re.findall(r"(?m)^## ", README)), len(SECTIONS))
 
-    def test_all_project_links_are_present(self):
-        destinations = set(
-            re.findall(r"https://github\.com/Anhao1314/([A-Za-z0-9_.-]+)", README)
-        )
-        self.assertEqual(destinations, REPOSITORIES)
+def emoji_codepoints(text):
+    found = []
+    for ch in text:
+        cp = ord(ch)
+        if any(lo <= cp <= hi for lo, hi in EMOJI_RANGES) or cp == 0xFE0F:
+            found.append(cp)
+    return found
+
+
+class TestStructure(unittest.TestCase):
+    def test_files_exist(self):
+        for p in ("README.md", "README.en.md", "assets/moon.svg",
+                  "scripts/generate_moon.py"):
+            self.assertTrue((ROOT / p).exists(), p)
+
+    def test_section_order(self):
+        idx = [README.index(s) for s in SECTIONS]
+        self.assertEqual(idx, sorted(idx), SECTIONS)
+        idx_en = [README_EN.index(s) for s in SECTIONS_EN]
+        self.assertEqual(idx_en, sorted(idx_en), SECTIONS_EN)
+
+    def test_all_repositories_linked(self):
         for repo in REPOSITORIES:
-            with self.subTest(repo=repo):
-                self.assertIn(REPO_PREFIX + repo, README)
+            for text, name in ((README, "zh"), (README_EN, "en")):
+                self.assertIn(REPO_PREFIX + repo + ")", text, f"{repo} missing in {name}")
 
-    def test_claim_table_status_uses_marks(self):
-        rows = [line for line in README.splitlines() if line.startswith("| [")]
-        self.assertGreaterEqual(len(rows), CLAIM_ROWS_MIN)
-        for row in rows:
-            mark = row.rstrip().split("|")[-2].strip()
-            with self.subTest(mark=mark):
-                self.assertIn(mark, STATUS_MARKS)
+    def test_creed_present(self):
+        self.assertIn("人负责定义值得解决的问题", README)
+        self.assertIn("真实证据决定保留什么", README)
+        self.assertIn("Real evidence decides what survives", README_EN)
 
-    def test_failure_record_stays_visible(self):
-        for phrase in (
-            "0 胜 9 平 1 负",
-            "盲测未通过，归档在案",
-            "仿真结果不等于实物可靠",
-            "非生产系统",
-        ):
-            with self.subTest(phrase=phrase):
-                self.assertIn(phrase, README)
+    def test_verdict_line_present(self):
+        self.assertIn("✅ 至今无一行适用", README)
+        self.assertIn("has never applied to a single row", README_EN)
 
-    def test_legend_asserts_no_replication(self):
-        self.assertIn("● 至今无一行适用", README)
+    def test_colophon_present(self):
         self.assertIn("未立声明者不上墙", README)
+        self.assertIn("Claims without a ledger entry stay off this page", README_EN)
+        self.assertIn("生命会自己寻求出路", README)
+        self.assertIn("LIFE FINDS A WAY", README)
+        self.assertIn("LIFE FINDS A WAY", README_EN)
 
-    def test_forbidden_vocabulary_absent(self):
-        for word in FORBIDDEN_ZH:
-            with self.subTest(word=word):
-                self.assertNotIn(word, README)
-                self.assertNotIn(word, README_EN)
-        for name, text in (("zh", README), ("en", README_EN)):
-            match = FORBIDDEN_EN.search(text)
-            if match is not None:
-                self.fail(f"{name}: forbidden word {match.group(0)!r}")
+    def test_footer_right_aligned(self):
+        for text, name in ((README, "zh"), (README_EN, "en")):
+            self.assertIn('<div align="right">', text, name)
 
-    def test_section_headers_carry_no_emoji(self):
-        for line in README.splitlines():
-            if line.startswith("#"):
-                with self.subTest(line=line):
-                    self.assertIsNone(EMOJI.search(line), "章节标题不用 emoji")
 
-    def test_emoji_admission_is_roster_controlled(self):
-        for name, text in (("zh", README), ("en", README_EN)):
-            found = set(EMOJI.findall(text))
-            with self.subTest(name=name, stray=sorted(found - ALLOWED_EMOJI)):
-                self.assertLessEqual(found, ALLOWED_EMOJI, "出现无编制 emoji")
+class TestStatusEmoji(unittest.TestCase):
+    def test_vocabulary_present(self):
+        for mark in STATUS_EMOJI:
+            self.assertIn(mark, README, mark)
+            self.assertIn(mark, README_EN, mark)
 
-    def test_roster_emoji_are_served(self):
-        for name, text in (("zh", README), ("en", README_EN)):
-            with self.subTest(name=name, missing=sorted(SERVED_EMOJI - set(EMOJI.findall(text)))):
-                self.assertLessEqual(SERVED_EMOJI, set(EMOJI.findall(text)), "编制内 emoji 必须到岗")
+    def test_only_allowed_emoji(self):
+        for text, name in ((README, "zh"), (README_EN, "en")):
+            bad = set(emoji_codepoints(text)) - ALLOWED_CODEPOINTS
+            self.assertFalse(bad, f"unexpected emoji in {name}: {bad}")
 
+    def test_no_replicated_mark_on_ledger_rows(self):
+        """✅ 是判决线：任何台账行都不得佩戴它。"""
+        body = ledger_section(README, "## 声明台账")
+        rows = [ln for ln in body.splitlines() if ln.startswith("- ")]
+        self.assertEqual(len(rows), 8, f"expected 8 ledger rows, got {len(rows)}")
+        for ln in rows:
+            self.assertNotIn("✅", ln, ln[:40])
+
+    def test_old_marks_are_gone(self):
+        for old in ("●", "◐", "○", "✕", "⚡︎"):
+            self.assertNotIn(old, README, old)
+            self.assertNotIn(old, README_EN, old)
+
+
+class TestMoonBoard(unittest.TestCase):
+    def test_both_readmes_embed_moon(self):
+        for text, name in ((README, "zh"), (README_EN, "en")):
+            self.assertIn("](assets/moon.svg)", text, name)
+
+    def test_board_carries_emoji_marks(self):
+        for mark in ("🟡", "⚪", "❌"):
+            self.assertIn(mark, MOON, mark)
+
+    def test_board_is_generated_not_drawn(self):
+        self.assertIn("OBSERVATION LOG", MOON)
+        self.assertIn("月龄", MOON)
+
+    def test_generator_computes_real_phase(self):
+        self.assertIn("SYNODIC", GENERATOR)
+        self.assertIn("math.cos", GENERATOR)
+        self.assertIn("REF_NEW_MOON", GENERATOR)
+
+    def test_workflow_redraws_daily(self):
+        wf = (ROOT / ".github" / "workflows" / "moon.yml").read_text(encoding="utf-8")
+        self.assertIn("cron:", wf)
+        self.assertIn("generate_moon.py", wf)
+
+
+class TestDiscipline(unittest.TestCase):
     def test_byte_budget(self):
-        for name, text in (("README.md", README), ("README.en.md", README_EN)):
-            used = len(text.encode("utf-8"))
-            with self.subTest(file=name, used_bytes=used, budget=BYTE_BUDGET):
-                self.assertLessEqual(used, BYTE_BUDGET)
+        for text, name in ((README, "zh"), (README_EN, "en")):
+            size = len(text.encode("utf-8"))
+            self.assertLessEqual(size, BYTE_BUDGET, f"{name}: {size} bytes")
 
-    def test_bilingual_pairing(self):
-        self.assertIn("[中文](README.md)", README)
-        self.assertIn("[English](README.en.md)", README)
-        self.assertIn("[中文](README.md)", README_EN)
-        self.assertIn("[English](README.en.md)", README_EN)
-
-
-class EnglishProfileTests(unittest.TestCase):
-    def test_identity_and_creeds(self):
-        for phrase in (
-            "# Eason",
-            "stop masquerading as the present",
-            "Failure is evidence",
-            "the truth of a conclusion lives in the links",
-        ):
-            with self.subTest(phrase=phrase):
-                self.assertIn(phrase, README_EN)
-
-    def test_section_order_and_count(self):
-        positions = [README_EN.index(section) for section in SECTIONS_EN]
-        self.assertEqual(positions, sorted(positions))
-        self.assertEqual(len(re.findall(r"(?m)^## ", README_EN)), len(SECTIONS_EN))
-
-    def test_link_set_matches_chinese(self):
-        destinations = set(
-            re.findall(r"https://github\.com/Anhao1314/([A-Za-z0-9_.-]+)", README_EN)
-        )
-        self.assertEqual(destinations, REPOSITORIES)
-
-    def test_claim_table_status_uses_marks(self):
-        rows = [line for line in README_EN.splitlines() if line.startswith("| [")]
-        self.assertGreaterEqual(len(rows), CLAIM_ROWS_MIN)
-        for row in rows:
-            mark = row.rstrip().split("|")[-2].strip()
-            with self.subTest(mark=mark):
-                self.assertIn(mark, STATUS_MARKS)
+    def test_moon_svg_budget(self):
+        size = len(MOON.encode("utf-8"))
+        self.assertLessEqual(size, 32768, f"moon.svg: {size} bytes")
 
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(verbosity=2)

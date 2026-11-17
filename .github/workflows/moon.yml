@@ -1,0 +1,36 @@
+name: Moon redraw
+on:
+  schedule:
+    - cron: "5 0 * * *" # 每日 UTC 00:05 重绘观测板
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: moon-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  redraw:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4, same pin as profile-check
+        with:
+          persist-credentials: true
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Redraw the observation board
+        run: python scripts/generate_moon.py --out assets/moon.svg
+      - name: Commit if changed
+        run: |
+          git config user.name "eason-moon-bot"
+          git config user.email "Anhao1314@users.noreply.github.com"
+          git add assets/moon.svg
+          if git diff --cached --quiet; then
+            echo "moon unchanged"
+          else
+            git commit -m "moon: redraw $(date -u +%F)"
+            git push
+          fi
