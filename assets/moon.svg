@@ -112,49 +112,50 @@
 <rect x="851.2" y="172.9" width="1.4" height="1.4" fill="#f2f2f2" fill-opacity="0.44"/>
 <rect x="936.3" y="221.7" width="1.8" height="1.8" fill="#f2f2f2" fill-opacity="0.45"/>
 <text x="28" y="46" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="17" letter-spacing="2" fill="#f2f2f2">EASON · OBSERVATION LOG</text>
-<text x="28" y="70" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2">2026-08-01 → 2026-11-22 · 13 EVENTS · 8 CLAIMS</text>
+<text x="28" y="70" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2">2026-08-01 → 2026-11-23 · 13 EVENTS · 8 CLAIMS</text>
 <text x="1172" y="46" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="17" fill="#f2f2f2" text-anchor="end">&gt;&gt;&gt; 现在</text>
 <line x1="48" y1="142" x2="150" y2="142" stroke="#9a9a9a" stroke-width="1.5" stroke-dasharray="2 6"/>
 <text x="48" y="132" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2">此前沉默 22 个月</text>
 <line x1="48" y1="158" x2="928" y2="158" stroke="#b9b9b9" stroke-width="2"/>
-<line x1="289" y1="149" x2="289" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
-<text x="289" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">9月</text>
-<line x1="523" y1="149" x2="523" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
-<text x="523" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">10月</text>
-<line x1="764" y1="149" x2="764" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
-<text x="764" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">11月</text>
+<line x1="287" y1="149" x2="287" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
+<text x="287" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">9月</text>
+<line x1="519" y1="149" x2="519" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
+<text x="519" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">10月</text>
+<line x1="758" y1="149" x2="758" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
+<text x="758" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">11月</text>
 <text x="48" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2">08-01</text>
-<text x="173" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="212" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="336" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="383" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
-<text x="437" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="554" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
-<text x="562" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
-<text x="593" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
-<text x="632" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">❌</text>
-<text x="655" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="671" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">❌</text>
-<text x="726" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="788" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="172" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="210" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="334" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="380" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
+<text x="434" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="550" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
+<text x="557" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
+<text x="588" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
+<text x="627" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">❌</text>
+<text x="650" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="666" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">❌</text>
+<text x="720" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="781" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
 <rect x="1032" y="70" width="35" height="5" fill="#f2f2f2"/>
 <rect x="1017" y="75" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1037" y="75" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1057" y="75" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1077" y="75" width="5" height="5" fill="#f2f2f2"/>
-<rect x="1012" y="80" width="80" height="5" fill="#f2f2f2"/>
-<rect x="1002" y="85" width="100" height="5" fill="#f2f2f2"/>
-<rect x="997" y="90" width="110" height="5" fill="#f2f2f2"/>
+<rect x="1007" y="80" width="85" height="5" fill="#f2f2f2"/>
+<rect x="997" y="85" width="105" height="5" fill="#f2f2f2"/>
+<rect x="992" y="90" width="115" height="5" fill="#f2f2f2"/>
+<rect x="987" y="95" width="5" height="5" fill="#f2f2f2"/>
 <rect x="997" y="95" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1017" y="95" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1037" y="95" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1057" y="95" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1077" y="95" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1097" y="95" width="15" height="5" fill="#f2f2f2"/>
-<rect x="987" y="100" width="130" height="5" fill="#f2f2f2"/>
-<rect x="987" y="105" width="135" height="5" fill="#f2f2f2"/>
-<rect x="982" y="110" width="145" height="5" fill="#f2f2f2"/>
-<rect x="982" y="115" width="10" height="5" fill="#f2f2f2"/>
+<rect x="982" y="100" width="135" height="5" fill="#f2f2f2"/>
+<rect x="982" y="105" width="140" height="5" fill="#f2f2f2"/>
+<rect x="977" y="110" width="150" height="5" fill="#f2f2f2"/>
+<rect x="977" y="115" width="15" height="5" fill="#f2f2f2"/>
 <rect x="997" y="115" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1017" y="115" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1037" y="115" width="5" height="5" fill="#f2f2f2"/>
@@ -162,73 +163,77 @@
 <rect x="1087" y="115" width="5" height="5" fill="#f2f2f2"/>
 <rect x="1097" y="115" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1117" y="115" width="10" height="5" fill="#f2f2f2"/>
-<rect x="977" y="120" width="40" height="5" fill="#f2f2f2"/>
+<rect x="972" y="120" width="45" height="5" fill="#f2f2f2"/>
 <rect x="1057" y="120" width="10" height="5" fill="#f2f2f2"/>
 <rect x="1092" y="120" width="40" height="5" fill="#f2f2f2"/>
-<rect x="977" y="125" width="35" height="5" fill="#f2f2f2"/>
+<rect x="972" y="125" width="40" height="5" fill="#f2f2f2"/>
 <rect x="1092" y="125" width="40" height="5" fill="#f2f2f2"/>
-<rect x="977" y="130" width="30" height="5" fill="#f2f2f2"/>
+<rect x="967" y="130" width="40" height="5" fill="#f2f2f2"/>
 <rect x="1057" y="130" width="5" height="5" fill="#f2f2f2"/>
 <rect x="1092" y="130" width="40" height="5" fill="#f2f2f2"/>
+<rect x="967" y="135" width="5" height="5" fill="#f2f2f2"/>
 <rect x="977" y="135" width="15" height="5" fill="#f2f2f2"/>
 <rect x="997" y="135" width="10" height="5" fill="#f2f2f2"/>
 <rect x="1057" y="135" width="5" height="5" fill="#f2f2f2"/>
 <rect x="1097" y="135" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1117" y="135" width="15" height="5" fill="#f2f2f2"/>
-<rect x="972" y="140" width="30" height="5" fill="#f2f2f2"/>
+<rect x="967" y="140" width="35" height="5" fill="#f2f2f2"/>
 <rect x="1057" y="140" width="10" height="5" fill="#f2f2f2"/>
 <rect x="1092" y="140" width="45" height="5" fill="#f2f2f2"/>
-<rect x="972" y="145" width="30" height="5" fill="#f2f2f2"/>
+<rect x="967" y="145" width="35" height="5" fill="#f2f2f2"/>
 <rect x="1057" y="145" width="80" height="5" fill="#f2f2f2"/>
-<rect x="972" y="150" width="35" height="5" fill="#f2f2f2"/>
+<rect x="967" y="150" width="40" height="5" fill="#f2f2f2"/>
 <rect x="1062" y="150" width="75" height="5" fill="#f2f2f2"/>
+<rect x="967" y="155" width="5" height="5" fill="#f2f2f2"/>
 <rect x="977" y="155" width="15" height="5" fill="#f2f2f2"/>
 <rect x="997" y="155" width="10" height="5" fill="#f2f2f2"/>
 <rect x="1077" y="155" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1097" y="155" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1117" y="155" width="15" height="5" fill="#f2f2f2"/>
-<rect x="972" y="160" width="40" height="5" fill="#f2f2f2"/>
+<rect x="967" y="160" width="45" height="5" fill="#f2f2f2"/>
 <rect x="1077" y="160" width="60" height="5" fill="#f2f2f2"/>
-<rect x="972" y="165" width="45" height="5" fill="#f2f2f2"/>
+<rect x="967" y="165" width="50" height="5" fill="#f2f2f2"/>
 <rect x="1082" y="165" width="55" height="5" fill="#f2f2f2"/>
-<rect x="972" y="170" width="60" height="5" fill="#f2f2f2"/>
+<rect x="967" y="170" width="65" height="5" fill="#f2f2f2"/>
 <rect x="1087" y="170" width="50" height="5" fill="#f2f2f2"/>
+<rect x="967" y="175" width="5" height="5" fill="#f2f2f2"/>
 <rect x="977" y="175" width="15" height="5" fill="#f2f2f2"/>
 <rect x="997" y="175" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1017" y="175" width="10" height="5" fill="#f2f2f2"/>
 <rect x="1087" y="175" width="5" height="5" fill="#f2f2f2"/>
 <rect x="1097" y="175" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1117" y="175" width="15" height="5" fill="#f2f2f2"/>
-<rect x="972" y="180" width="55" height="5" fill="#f2f2f2"/>
+<rect x="967" y="180" width="60" height="5" fill="#f2f2f2"/>
 <rect x="1087" y="180" width="45" height="5" fill="#f2f2f2"/>
-<rect x="977" y="185" width="50" height="5" fill="#f2f2f2"/>
+<rect x="972" y="185" width="55" height="5" fill="#f2f2f2"/>
 <rect x="1082" y="185" width="50" height="5" fill="#f2f2f2"/>
-<rect x="977" y="190" width="55" height="5" fill="#f2f2f2"/>
+<rect x="972" y="190" width="60" height="5" fill="#f2f2f2"/>
 <rect x="1077" y="190" width="55" height="5" fill="#f2f2f2"/>
-<rect x="982" y="195" width="10" height="5" fill="#f2f2f2"/>
+<rect x="977" y="195" width="15" height="5" fill="#f2f2f2"/>
 <rect x="997" y="195" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1017" y="195" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1047" y="195" width="5" height="5" fill="#f2f2f2"/>
 <rect x="1077" y="195" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1097" y="195" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1117" y="195" width="10" height="5" fill="#f2f2f2"/>
-<rect x="982" y="200" width="145" height="5" fill="#f2f2f2"/>
-<rect x="987" y="205" width="135" height="5" fill="#f2f2f2"/>
-<rect x="987" y="210" width="130" height="5" fill="#f2f2f2"/>
+<rect x="977" y="200" width="150" height="5" fill="#f2f2f2"/>
+<rect x="982" y="205" width="140" height="5" fill="#f2f2f2"/>
+<rect x="982" y="210" width="135" height="5" fill="#f2f2f2"/>
+<rect x="987" y="215" width="5" height="5" fill="#f2f2f2"/>
 <rect x="997" y="215" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1017" y="215" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1037" y="215" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1057" y="215" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1077" y="215" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1097" y="215" width="15" height="5" fill="#f2f2f2"/>
-<rect x="997" y="220" width="110" height="5" fill="#f2f2f2"/>
-<rect x="1002" y="225" width="100" height="5" fill="#f2f2f2"/>
+<rect x="992" y="220" width="115" height="5" fill="#f2f2f2"/>
+<rect x="997" y="225" width="105" height="5" fill="#f2f2f2"/>
 <rect x="1007" y="230" width="90" height="5" fill="#f2f2f2"/>
 <rect x="1017" y="235" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1037" y="235" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1057" y="235" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1077" y="235" width="10" height="5" fill="#f2f2f2"/>
 <rect x="1027" y="240" width="45" height="5" fill="#f2f2f2"/>
-<text x="1050" y="282" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">月龄 12.6 天 · 照度 95%</text>
+<text x="1050" y="282" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">月龄 13.6 天 · 照度 98%</text>
 <text x="28" y="284" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2">本页唯一的图片 · 月相真实 · Actions 每日重绘</text>
 </svg>
