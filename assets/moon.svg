@@ -112,31 +112,31 @@
 <rect x="851.2" y="172.9" width="1.4" height="1.4" fill="#f2f2f2" fill-opacity="0.44"/>
 <rect x="936.3" y="221.7" width="1.8" height="1.8" fill="#f2f2f2" fill-opacity="0.45"/>
 <text x="28" y="46" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="17" letter-spacing="2" fill="#f2f2f2">EASON · OBSERVATION LOG</text>
-<text x="28" y="70" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2">2026-08-01 → 2026-11-24 · 13 EVENTS · 8 CLAIMS</text>
+<text x="28" y="70" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2">2026-08-01 → 2026-11-25 · 13 EVENTS · 8 CLAIMS</text>
 <text x="1172" y="46" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="17" fill="#f2f2f2" text-anchor="end">&gt;&gt;&gt; 现在</text>
 <line x1="48" y1="142" x2="150" y2="142" stroke="#9a9a9a" stroke-width="1.5" stroke-dasharray="2 6"/>
 <text x="48" y="132" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2">此前沉默 22 个月</text>
 <line x1="48" y1="158" x2="928" y2="158" stroke="#b9b9b9" stroke-width="2"/>
-<line x1="285" y1="149" x2="285" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
-<text x="285" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">9月</text>
-<line x1="515" y1="149" x2="515" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
-<text x="515" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">10月</text>
-<line x1="752" y1="149" x2="752" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
-<text x="752" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">11月</text>
+<line x1="283" y1="149" x2="283" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
+<text x="283" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">9月</text>
+<line x1="511" y1="149" x2="511" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
+<text x="511" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">10月</text>
+<line x1="746" y1="149" x2="746" y2="167" stroke="#b9b9b9" stroke-width="1.5"/>
+<text x="746" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">11月</text>
 <text x="48" y="185" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2">08-01</text>
-<text x="170" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="209" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="331" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="377" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
-<text x="431" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="545" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
-<text x="553" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
-<text x="584" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
-<text x="622" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">❌</text>
-<text x="645" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="660" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">❌</text>
-<text x="714" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
-<text x="775" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="169" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="207" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="329" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="374" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
+<text x="427" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="541" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
+<text x="549" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
+<text x="579" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">⚪</text>
+<text x="617" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">❌</text>
+<text x="640" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="655" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">❌</text>
+<text x="708" y="170" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
+<text x="769" y="146" font-family="'Segoe UI Emoji','Apple Color Emoji','Noto Color Emoji',sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central">🟡</text>
 <rect x="1032" y="70" width="35" height="5" fill="#f2f2f2"/>
 <rect x="1017" y="75" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1037" y="75" width="15" height="5" fill="#f2f2f2"/>
@@ -154,7 +154,7 @@
 <rect x="1097" y="95" width="15" height="5" fill="#f2f2f2"/>
 <rect x="982" y="100" width="135" height="5" fill="#f2f2f2"/>
 <rect x="977" y="105" width="145" height="5" fill="#f2f2f2"/>
-<rect x="977" y="110" width="150" height="5" fill="#f2f2f2"/>
+<rect x="977" y="110" width="145" height="5" fill="#f2f2f2"/>
 <rect x="977" y="115" width="15" height="5" fill="#f2f2f2"/>
 <rect x="997" y="115" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1017" y="115" width="15" height="5" fill="#f2f2f2"/>
@@ -165,7 +165,7 @@
 <rect x="1117" y="115" width="10" height="5" fill="#f2f2f2"/>
 <rect x="972" y="120" width="45" height="5" fill="#f2f2f2"/>
 <rect x="1057" y="120" width="10" height="5" fill="#f2f2f2"/>
-<rect x="1092" y="120" width="40" height="5" fill="#f2f2f2"/>
+<rect x="1092" y="120" width="35" height="5" fill="#f2f2f2"/>
 <rect x="967" y="125" width="45" height="5" fill="#f2f2f2"/>
 <rect x="1092" y="125" width="40" height="5" fill="#f2f2f2"/>
 <rect x="967" y="130" width="40" height="5" fill="#f2f2f2"/>
@@ -234,6 +234,6 @@
 <rect x="1057" y="235" width="15" height="5" fill="#f2f2f2"/>
 <rect x="1077" y="235" width="10" height="5" fill="#f2f2f2"/>
 <rect x="1027" y="240" width="45" height="5" fill="#f2f2f2"/>
-<text x="1050" y="282" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">月龄 14.6 天 · 照度 100%</text>
+<text x="1050" y="282" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2" text-anchor="middle">月龄 15.6 天 · 照度 99%</text>
 <text x="28" y="284" font-family="ui-monospace,'SF Mono',Menlo,Consolas,'Courier New',monospace" font-size="15" fill="#c2c2c2">本页唯一的图片 · 月相真实 · Actions 每日重绘</text>
 </svg>
